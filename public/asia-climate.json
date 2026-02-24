@@ -1,0 +1,5982 @@
+{
+  "Bangkok": {
+    "country": "Thailand",
+    "lat": 13.7563,
+    "lng": 100.5018,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 33,
+        "low": 23,
+        "rainfall": 10,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool dry season, perfect weather"
+      },
+      {
+        "month": 2,
+        "high": 34,
+        "low": 24,
+        "rainfall": 20,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Hot and dry, great for sightseeing"
+      },
+      {
+        "month": 3,
+        "high": 36,
+        "low": 26,
+        "rainfall": 30,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Very hot, some humidity building"
+      },
+      {
+        "month": 4,
+        "high": 37,
+        "low": 27,
+        "rainfall": 60,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Hottest month, occasional showers"
+      },
+      {
+        "month": 5,
+        "high": 35,
+        "low": 26,
+        "rainfall": 190,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Monsoon begins, frequent afternoon storms"
+      },
+      {
+        "month": 6,
+        "high": 34,
+        "low": 26,
+        "rainfall": 150,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Monsoon season in full swing"
+      },
+      {
+        "month": 7,
+        "high": 33,
+        "low": 25,
+        "rainfall": 175,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Heavy monsoon rains"
+      },
+      {
+        "month": 8,
+        "high": 33,
+        "low": 25,
+        "rainfall": 205,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Wettest month — flooding possible"
+      },
+      {
+        "month": 9,
+        "high": 33,
+        "low": 25,
+        "rainfall": 230,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Very wet, high flood risk"
+      },
+      {
+        "month": 10,
+        "high": 32,
+        "low": 24,
+        "rainfall": 165,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Rains tapering off"
+      },
+      {
+        "month": 11,
+        "high": 31,
+        "low": 23,
+        "rainfall": 45,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Dry season returns, pleasant temperatures"
+      },
+      {
+        "month": 12,
+        "high": 31,
+        "low": 22,
+        "rainfall": 10,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool and dry, peak season"
+      }
+    ]
+  },
+  "Chiang Mai": {
+    "country": "Thailand",
+    "lat": 18.7883,
+    "lng": 98.9853,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 29,
+        "low": 13,
+        "rainfall": 8,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool, clear and comfortable"
+      },
+      {
+        "month": 2,
+        "high": 33,
+        "low": 15,
+        "rainfall": 5,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Warm days, cool nights"
+      },
+      {
+        "month": 3,
+        "high": 36,
+        "low": 19,
+        "rainfall": 15,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Haze and smoke season begins"
+      },
+      {
+        "month": 4,
+        "high": 38,
+        "low": 23,
+        "rainfall": 35,
+        "season": "hot",
+        "rating": "fair",
+        "desc": "Very hot with smoky haze from burning"
+      },
+      {
+        "month": 5,
+        "high": 35,
+        "low": 23,
+        "rainfall": 150,
+        "season": "wet",
+        "rating": "good",
+        "desc": "Rains wash away smoke, cooler"
+      },
+      {
+        "month": 6,
+        "high": 32,
+        "low": 23,
+        "rainfall": 130,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Regular monsoon rains"
+      },
+      {
+        "month": 7,
+        "high": 31,
+        "low": 23,
+        "rainfall": 155,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Heavy monsoon period"
+      },
+      {
+        "month": 8,
+        "high": 31,
+        "low": 23,
+        "rainfall": 220,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Wettest month, flooding risk"
+      },
+      {
+        "month": 9,
+        "high": 31,
+        "low": 22,
+        "rainfall": 185,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Still very wet"
+      },
+      {
+        "month": 10,
+        "high": 30,
+        "low": 21,
+        "rainfall": 90,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Rains reducing, pleasant"
+      },
+      {
+        "month": 11,
+        "high": 29,
+        "low": 17,
+        "rainfall": 30,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Lovely cool dry weather"
+      },
+      {
+        "month": 12,
+        "high": 28,
+        "low": 13,
+        "rainfall": 10,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool, clear and beautiful"
+      }
+    ]
+  },
+  "Phuket": {
+    "country": "Thailand",
+    "lat": 7.8804,
+    "lng": 98.3923,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 31,
+        "low": 24,
+        "rainfall": 35,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Peak season, clear skies and calm seas"
+      },
+      {
+        "month": 2,
+        "high": 32,
+        "low": 24,
+        "rainfall": 30,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Ideal beach weather"
+      },
+      {
+        "month": 3,
+        "high": 33,
+        "low": 25,
+        "rainfall": 45,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Hot and sunny, great for beaches"
+      },
+      {
+        "month": 4,
+        "high": 33,
+        "low": 26,
+        "rainfall": 100,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Getting wetter, still enjoyable"
+      },
+      {
+        "month": 5,
+        "high": 32,
+        "low": 25,
+        "rainfall": 220,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Monsoon season starts, rough seas"
+      },
+      {
+        "month": 6,
+        "high": 31,
+        "low": 25,
+        "rainfall": 195,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Heavy rains, strong winds"
+      },
+      {
+        "month": 7,
+        "high": 31,
+        "low": 25,
+        "rainfall": 215,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Peak monsoon — avoid if possible"
+      },
+      {
+        "month": 8,
+        "high": 31,
+        "low": 25,
+        "rainfall": 240,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Wettest month, dangerous seas"
+      },
+      {
+        "month": 9,
+        "high": 30,
+        "low": 24,
+        "rainfall": 265,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Very wet and rough"
+      },
+      {
+        "month": 10,
+        "high": 30,
+        "low": 24,
+        "rainfall": 275,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Still heavy monsoon rains"
+      },
+      {
+        "month": 11,
+        "high": 31,
+        "low": 24,
+        "rainfall": 150,
+        "season": "shoulder",
+        "rating": "fair",
+        "desc": "Rains easing, good value period"
+      },
+      {
+        "month": 12,
+        "high": 31,
+        "low": 24,
+        "rainfall": 50,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Dry season returns, beautiful beaches"
+      }
+    ]
+  },
+  "Tokyo": {
+    "country": "Japan",
+    "lat": 35.6762,
+    "lng": 139.6503,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 10,
+        "low": 2,
+        "rainfall": 50,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cold and dry, clear skies for Mt Fuji views"
+      },
+      {
+        "month": 2,
+        "high": 11,
+        "low": 2,
+        "rainfall": 55,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cold but often sunny"
+      },
+      {
+        "month": 3,
+        "high": 14,
+        "low": 6,
+        "rainfall": 110,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Cherry blossom season begins — magical!"
+      },
+      {
+        "month": 4,
+        "high": 19,
+        "low": 10,
+        "rainfall": 125,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Peak cherry blossoms, gorgeous weather"
+      },
+      {
+        "month": 5,
+        "high": 23,
+        "low": 15,
+        "rainfall": 135,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Warm and pleasant, greenery everywhere"
+      },
+      {
+        "month": 6,
+        "high": 26,
+        "low": 19,
+        "rainfall": 165,
+        "season": "rainy",
+        "rating": "fair",
+        "desc": "Rainy season — humid with frequent showers"
+      },
+      {
+        "month": 7,
+        "high": 29,
+        "low": 23,
+        "rainfall": 150,
+        "season": "summer",
+        "rating": "fair",
+        "desc": "Hot and humid after rainy season"
+      },
+      {
+        "month": 8,
+        "high": 31,
+        "low": 24,
+        "rainfall": 170,
+        "season": "summer",
+        "rating": "fair",
+        "desc": "Peak summer heat, typhoon risk"
+      },
+      {
+        "month": 9,
+        "high": 27,
+        "low": 21,
+        "rainfall": 215,
+        "season": "autumn",
+        "rating": "fair",
+        "desc": "Typhoon season — heavy rain possible"
+      },
+      {
+        "month": 10,
+        "high": 21,
+        "low": 15,
+        "rainfall": 165,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Perfect autumn weather, fall foliage"
+      },
+      {
+        "month": 11,
+        "high": 16,
+        "low": 9,
+        "rainfall": 90,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Beautiful autumn colors"
+      },
+      {
+        "month": 12,
+        "high": 11,
+        "low": 4,
+        "rainfall": 50,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cold and festive, illuminations"
+      }
+    ]
+  },
+  "Osaka": {
+    "country": "Japan",
+    "lat": 34.6937,
+    "lng": 135.5023,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 9,
+        "low": 2,
+        "rainfall": 50,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cold and clear, good for exploring"
+      },
+      {
+        "month": 2,
+        "high": 10,
+        "low": 2,
+        "rainfall": 65,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cold with occasional snow"
+      },
+      {
+        "month": 3,
+        "high": 14,
+        "low": 6,
+        "rainfall": 100,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Cherry blossoms bloom — spectacular"
+      },
+      {
+        "month": 4,
+        "high": 20,
+        "low": 11,
+        "rainfall": 110,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Peak spring, warm and beautiful"
+      },
+      {
+        "month": 5,
+        "high": 24,
+        "low": 16,
+        "rainfall": 140,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Warm and pleasant"
+      },
+      {
+        "month": 6,
+        "high": 27,
+        "low": 20,
+        "rainfall": 185,
+        "season": "rainy",
+        "rating": "fair",
+        "desc": "Rainy season, hot and humid"
+      },
+      {
+        "month": 7,
+        "high": 31,
+        "low": 24,
+        "rainfall": 150,
+        "season": "summer",
+        "rating": "fair",
+        "desc": "Very hot and humid"
+      },
+      {
+        "month": 8,
+        "high": 33,
+        "low": 25,
+        "rainfall": 110,
+        "season": "summer",
+        "rating": "fair",
+        "desc": "Hottest month, summer festivals"
+      },
+      {
+        "month": 9,
+        "high": 28,
+        "low": 21,
+        "rainfall": 165,
+        "season": "autumn",
+        "rating": "fair",
+        "desc": "Typhoon risk, still warm"
+      },
+      {
+        "month": 10,
+        "high": 22,
+        "low": 15,
+        "rainfall": 130,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Gorgeous fall foliage"
+      },
+      {
+        "month": 11,
+        "high": 16,
+        "low": 9,
+        "rainfall": 80,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Cool and pleasant autumn"
+      },
+      {
+        "month": 12,
+        "high": 11,
+        "low": 3,
+        "rainfall": 50,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cold, festive season"
+      }
+    ]
+  },
+  "Kyoto": {
+    "country": "Japan",
+    "lat": 35.0116,
+    "lng": 135.7681,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 9,
+        "low": 1,
+        "rainfall": 45,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cold with occasional snow on temples"
+      },
+      {
+        "month": 2,
+        "high": 10,
+        "low": 1,
+        "rainfall": 60,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cold, sometimes snowy"
+      },
+      {
+        "month": 3,
+        "high": 14,
+        "low": 5,
+        "rainfall": 95,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Cherry blossom season — unmissable"
+      },
+      {
+        "month": 4,
+        "high": 20,
+        "low": 10,
+        "rainfall": 110,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Peak cherry blossoms, very busy"
+      },
+      {
+        "month": 5,
+        "high": 25,
+        "low": 15,
+        "rainfall": 145,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Warm, lush greenery"
+      },
+      {
+        "month": 6,
+        "high": 28,
+        "low": 19,
+        "rainfall": 200,
+        "season": "rainy",
+        "rating": "fair",
+        "desc": "Rainy season, atmospheric but wet"
+      },
+      {
+        "month": 7,
+        "high": 32,
+        "low": 24,
+        "rainfall": 220,
+        "season": "summer",
+        "rating": "fair",
+        "desc": "Very hot and humid"
+      },
+      {
+        "month": 8,
+        "high": 33,
+        "low": 24,
+        "rainfall": 100,
+        "season": "summer",
+        "rating": "fair",
+        "desc": "Hottest month, traditional festivals"
+      },
+      {
+        "month": 9,
+        "high": 28,
+        "low": 20,
+        "rainfall": 155,
+        "season": "autumn",
+        "rating": "good",
+        "desc": "Cooling down, early fall colors"
+      },
+      {
+        "month": 10,
+        "high": 22,
+        "low": 14,
+        "rainfall": 125,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Perfect autumn foliage season"
+      },
+      {
+        "month": 11,
+        "high": 16,
+        "low": 8,
+        "rainfall": 75,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Stunning fall colors at temples"
+      },
+      {
+        "month": 12,
+        "high": 11,
+        "low": 3,
+        "rainfall": 45,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cold but magical winter atmosphere"
+      }
+    ]
+  },
+  "Hanoi": {
+    "country": "Vietnam",
+    "lat": 21.0285,
+    "lng": 105.8542,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 18,
+        "low": 13,
+        "rainfall": 20,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cool and misty — layer up"
+      },
+      {
+        "month": 2,
+        "high": 19,
+        "low": 14,
+        "rainfall": 25,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Drizzly but manageable"
+      },
+      {
+        "month": 3,
+        "high": 22,
+        "low": 17,
+        "rainfall": 40,
+        "season": "spring",
+        "rating": "good",
+        "desc": "Warming up, occasional drizzle"
+      },
+      {
+        "month": 4,
+        "high": 27,
+        "low": 21,
+        "rainfall": 75,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Warm and pleasant spring"
+      },
+      {
+        "month": 5,
+        "high": 32,
+        "low": 24,
+        "rainfall": 190,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Hot with heavy afternoon rains"
+      },
+      {
+        "month": 6,
+        "high": 33,
+        "low": 26,
+        "rainfall": 240,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Very hot and very wet"
+      },
+      {
+        "month": 7,
+        "high": 33,
+        "low": 26,
+        "rainfall": 290,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Hottest and wettest month"
+      },
+      {
+        "month": 8,
+        "high": 32,
+        "low": 26,
+        "rainfall": 310,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Heavy monsoon rains, flooding"
+      },
+      {
+        "month": 9,
+        "high": 31,
+        "low": 24,
+        "rainfall": 250,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Still very wet"
+      },
+      {
+        "month": 10,
+        "high": 28,
+        "low": 22,
+        "rainfall": 130,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Beautiful autumn, rains ease"
+      },
+      {
+        "month": 11,
+        "high": 24,
+        "low": 18,
+        "rainfall": 45,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Cool and dry — ideal season"
+      },
+      {
+        "month": 12,
+        "high": 20,
+        "low": 14,
+        "rainfall": 20,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cool and relatively dry"
+      }
+    ]
+  },
+  "Ho Chi Minh City": {
+    "country": "Vietnam",
+    "lat": 10.8231,
+    "lng": 106.6297,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 34,
+        "low": 22,
+        "rainfall": 15,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Dry season peak, sunny and hot"
+      },
+      {
+        "month": 2,
+        "high": 35,
+        "low": 23,
+        "rainfall": 5,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Hottest and driest month"
+      },
+      {
+        "month": 3,
+        "high": 36,
+        "low": 24,
+        "rainfall": 15,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Very hot, pre-monsoon"
+      },
+      {
+        "month": 4,
+        "high": 36,
+        "low": 25,
+        "rainfall": 45,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Hot, first rains appear"
+      },
+      {
+        "month": 5,
+        "high": 34,
+        "low": 25,
+        "rainfall": 220,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Monsoon begins, heavy afternoon rains"
+      },
+      {
+        "month": 6,
+        "high": 32,
+        "low": 24,
+        "rainfall": 340,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Heavy monsoon season"
+      },
+      {
+        "month": 7,
+        "high": 32,
+        "low": 24,
+        "rainfall": 295,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Very wet, flooding in city"
+      },
+      {
+        "month": 8,
+        "high": 31,
+        "low": 24,
+        "rainfall": 270,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Consistently wet"
+      },
+      {
+        "month": 9,
+        "high": 31,
+        "low": 24,
+        "rainfall": 330,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Wettest month — flooding common"
+      },
+      {
+        "month": 10,
+        "high": 31,
+        "low": 23,
+        "rainfall": 265,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Still very wet, rains easing"
+      },
+      {
+        "month": 11,
+        "high": 32,
+        "low": 23,
+        "rainfall": 115,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Drying out, pleasant"
+      },
+      {
+        "month": 12,
+        "high": 33,
+        "low": 22,
+        "rainfall": 45,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Dry season returns, great weather"
+      }
+    ]
+  },
+  "Da Nang": {
+    "country": "Vietnam",
+    "lat": 16.0544,
+    "lng": 108.2022,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 24,
+        "low": 19,
+        "rainfall": 70,
+        "season": "cool",
+        "rating": "good",
+        "desc": "Cool and sometimes rainy"
+      },
+      {
+        "month": 2,
+        "high": 26,
+        "low": 20,
+        "rainfall": 30,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Warming up, less rain"
+      },
+      {
+        "month": 3,
+        "high": 28,
+        "low": 21,
+        "rainfall": 20,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Beautiful beach weather"
+      },
+      {
+        "month": 4,
+        "high": 31,
+        "low": 23,
+        "rainfall": 20,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Hot, sunny and dry — peak season"
+      },
+      {
+        "month": 5,
+        "high": 33,
+        "low": 25,
+        "rainfall": 45,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Hot and sunny"
+      },
+      {
+        "month": 6,
+        "high": 34,
+        "low": 26,
+        "rainfall": 55,
+        "season": "dry",
+        "rating": "good",
+        "desc": "Hot with occasional showers"
+      },
+      {
+        "month": 7,
+        "high": 34,
+        "low": 26,
+        "rainfall": 95,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Hot, some afternoon rains"
+      },
+      {
+        "month": 8,
+        "high": 34,
+        "low": 26,
+        "rainfall": 115,
+        "season": "shoulder",
+        "rating": "fair",
+        "desc": "Getting wetter, typhoon risk"
+      },
+      {
+        "month": 9,
+        "high": 30,
+        "low": 24,
+        "rainfall": 365,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Heavy rains, typhoon season"
+      },
+      {
+        "month": 10,
+        "high": 27,
+        "low": 23,
+        "rainfall": 600,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Wettest month — major flooding risk"
+      },
+      {
+        "month": 11,
+        "high": 26,
+        "low": 22,
+        "rainfall": 350,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Very heavy rains continue"
+      },
+      {
+        "month": 12,
+        "high": 24,
+        "low": 20,
+        "rainfall": 215,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Rains reducing but still significant"
+      }
+    ]
+  },
+  "Bali": {
+    "country": "Indonesia",
+    "lat": -8.3405,
+    "lng": 115.092,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 30,
+        "low": 24,
+        "rainfall": 300,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet season — lush but rainy"
+      },
+      {
+        "month": 2,
+        "high": 30,
+        "low": 24,
+        "rainfall": 270,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Still rainy, green landscapes"
+      },
+      {
+        "month": 3,
+        "high": 30,
+        "low": 24,
+        "rainfall": 210,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Rains easing, good value"
+      },
+      {
+        "month": 4,
+        "high": 31,
+        "low": 24,
+        "rainfall": 80,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Transitioning to dry, lovely"
+      },
+      {
+        "month": 5,
+        "high": 30,
+        "low": 23,
+        "rainfall": 55,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Dry season begins, ideal weather"
+      },
+      {
+        "month": 6,
+        "high": 29,
+        "low": 22,
+        "rainfall": 35,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Perfect conditions, cooler evenings"
+      },
+      {
+        "month": 7,
+        "high": 28,
+        "low": 22,
+        "rainfall": 25,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Peak dry season — best time"
+      },
+      {
+        "month": 8,
+        "high": 28,
+        "low": 21,
+        "rainfall": 25,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Dry, slightly cooler and breezy"
+      },
+      {
+        "month": 9,
+        "high": 29,
+        "low": 22,
+        "rainfall": 35,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Still lovely, quieter than peak"
+      },
+      {
+        "month": 10,
+        "high": 30,
+        "low": 23,
+        "rainfall": 90,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Transitioning to wet season"
+      },
+      {
+        "month": 11,
+        "high": 30,
+        "low": 23,
+        "rainfall": 175,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet season returning"
+      },
+      {
+        "month": 12,
+        "high": 30,
+        "low": 24,
+        "rainfall": 255,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Rainy season — festive but wet"
+      }
+    ]
+  },
+  "Kuala Lumpur": {
+    "country": "Malaysia",
+    "lat": 3.139,
+    "lng": 101.6869,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 32,
+        "low": 23,
+        "rainfall": 170,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet but manageable, rain clears quickly"
+      },
+      {
+        "month": 2,
+        "high": 33,
+        "low": 23,
+        "rainfall": 165,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Similar conditions, some sunny days"
+      },
+      {
+        "month": 3,
+        "high": 33,
+        "low": 24,
+        "rainfall": 220,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wetter period"
+      },
+      {
+        "month": 4,
+        "high": 33,
+        "low": 24,
+        "rainfall": 260,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "April showers"
+      },
+      {
+        "month": 5,
+        "high": 33,
+        "low": 24,
+        "rainfall": 200,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Frequent afternoon thunderstorms"
+      },
+      {
+        "month": 6,
+        "high": 32,
+        "low": 23,
+        "rainfall": 125,
+        "season": "drier",
+        "rating": "good",
+        "desc": "Relatively drier period"
+      },
+      {
+        "month": 7,
+        "high": 32,
+        "low": 23,
+        "rainfall": 115,
+        "season": "drier",
+        "rating": "good",
+        "desc": "Drier and sunnier"
+      },
+      {
+        "month": 8,
+        "high": 32,
+        "low": 23,
+        "rainfall": 140,
+        "season": "drier",
+        "rating": "good",
+        "desc": "Decent weather, some showers"
+      },
+      {
+        "month": 9,
+        "high": 32,
+        "low": 23,
+        "rainfall": 175,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wetter again"
+      },
+      {
+        "month": 10,
+        "high": 32,
+        "low": 23,
+        "rainfall": 250,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Heavy rains return"
+      },
+      {
+        "month": 11,
+        "high": 32,
+        "low": 23,
+        "rainfall": 260,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet season peak"
+      },
+      {
+        "month": 12,
+        "high": 32,
+        "low": 23,
+        "rainfall": 210,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet but festive season"
+      }
+    ]
+  },
+  "Singapore": {
+    "country": "Singapore",
+    "lat": 1.3521,
+    "lng": 103.8198,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 30,
+        "low": 24,
+        "rainfall": 245,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Northeast monsoon, rainy and humid"
+      },
+      {
+        "month": 2,
+        "high": 31,
+        "low": 24,
+        "rainfall": 115,
+        "season": "drier",
+        "rating": "good",
+        "desc": "Drier and sunnier — best month"
+      },
+      {
+        "month": 3,
+        "high": 32,
+        "low": 25,
+        "rainfall": 170,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Warm, some showers"
+      },
+      {
+        "month": 4,
+        "high": 32,
+        "low": 25,
+        "rainfall": 170,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Thunderstorms in afternoons"
+      },
+      {
+        "month": 5,
+        "high": 33,
+        "low": 26,
+        "rainfall": 175,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Hot and humid with showers"
+      },
+      {
+        "month": 6,
+        "high": 33,
+        "low": 26,
+        "rainfall": 140,
+        "season": "drier",
+        "rating": "good",
+        "desc": "Hotter but slightly drier"
+      },
+      {
+        "month": 7,
+        "high": 32,
+        "low": 26,
+        "rainfall": 155,
+        "season": "drier",
+        "rating": "good",
+        "desc": "Manageable heat and rain"
+      },
+      {
+        "month": 8,
+        "high": 32,
+        "low": 26,
+        "rainfall": 180,
+        "season": "shoulder",
+        "rating": "fair",
+        "desc": "Thunderstorms common"
+      },
+      {
+        "month": 9,
+        "high": 32,
+        "low": 25,
+        "rainfall": 180,
+        "season": "shoulder",
+        "rating": "fair",
+        "desc": "Hot and showery"
+      },
+      {
+        "month": 10,
+        "high": 31,
+        "low": 25,
+        "rainfall": 195,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wetter, southeast monsoon ending"
+      },
+      {
+        "month": 11,
+        "high": 31,
+        "low": 24,
+        "rainfall": 255,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Northeast monsoon begins, heavy rain"
+      },
+      {
+        "month": 12,
+        "high": 30,
+        "low": 24,
+        "rainfall": 315,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wettest month, but still lively"
+      }
+    ]
+  },
+  "Siem Reap": {
+    "country": "Cambodia",
+    "lat": 13.3671,
+    "lng": 103.8448,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 30,
+        "low": 19,
+        "rainfall": 10,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool dry season — ideal for Angkor Wat"
+      },
+      {
+        "month": 2,
+        "high": 32,
+        "low": 20,
+        "rainfall": 10,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Hot and dry, great conditions"
+      },
+      {
+        "month": 3,
+        "high": 35,
+        "low": 22,
+        "rainfall": 30,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Very hot, still manageable"
+      },
+      {
+        "month": 4,
+        "high": 36,
+        "low": 24,
+        "rainfall": 65,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Very hot with occasional storms"
+      },
+      {
+        "month": 5,
+        "high": 34,
+        "low": 24,
+        "rainfall": 165,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Monsoon begins, afternoon showers"
+      },
+      {
+        "month": 6,
+        "high": 32,
+        "low": 24,
+        "rainfall": 190,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Regular monsoon rains"
+      },
+      {
+        "month": 7,
+        "high": 31,
+        "low": 24,
+        "rainfall": 185,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet and green"
+      },
+      {
+        "month": 8,
+        "high": 31,
+        "low": 24,
+        "rainfall": 220,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Heavy rains, Tonle Sap flooding"
+      },
+      {
+        "month": 9,
+        "high": 30,
+        "low": 24,
+        "rainfall": 285,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Wettest month — temples may flood"
+      },
+      {
+        "month": 10,
+        "high": 30,
+        "low": 23,
+        "rainfall": 250,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Still wet, water festival later"
+      },
+      {
+        "month": 11,
+        "high": 30,
+        "low": 21,
+        "rainfall": 65,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Dry season returning, comfortable"
+      },
+      {
+        "month": 12,
+        "high": 29,
+        "low": 19,
+        "rainfall": 20,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool and dry — perfect conditions"
+      }
+    ]
+  },
+  "Kathmandu": {
+    "country": "Nepal",
+    "lat": 27.7172,
+    "lng": 85.324,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 18,
+        "low": 2,
+        "rainfall": 20,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cold and clear, mountain views excellent"
+      },
+      {
+        "month": 2,
+        "high": 20,
+        "low": 4,
+        "rainfall": 35,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Warming up, good trekking"
+      },
+      {
+        "month": 3,
+        "high": 24,
+        "low": 8,
+        "rainfall": 45,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Rhododendrons blooming, great trekking"
+      },
+      {
+        "month": 4,
+        "high": 27,
+        "low": 12,
+        "rainfall": 65,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Perfect trekking season"
+      },
+      {
+        "month": 5,
+        "high": 28,
+        "low": 15,
+        "rainfall": 100,
+        "season": "spring",
+        "rating": "good",
+        "desc": "Pre-monsoon, getting hazy"
+      },
+      {
+        "month": 6,
+        "high": 28,
+        "low": 17,
+        "rainfall": 225,
+        "season": "monsoon",
+        "rating": "fair",
+        "desc": "Monsoon arrives, trekking difficult"
+      },
+      {
+        "month": 7,
+        "high": 27,
+        "low": 18,
+        "rainfall": 365,
+        "season": "monsoon",
+        "rating": "poor",
+        "desc": "Heavy monsoon — trails muddy and slippery"
+      },
+      {
+        "month": 8,
+        "high": 27,
+        "low": 18,
+        "rainfall": 345,
+        "season": "monsoon",
+        "rating": "poor",
+        "desc": "Wettest period, landslide risk"
+      },
+      {
+        "month": 9,
+        "high": 26,
+        "low": 16,
+        "rainfall": 190,
+        "season": "monsoon",
+        "rating": "fair",
+        "desc": "Monsoon easing, autumn approaching"
+      },
+      {
+        "month": 10,
+        "high": 24,
+        "low": 10,
+        "rainfall": 55,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Best trekking season — clear and cool"
+      },
+      {
+        "month": 11,
+        "high": 21,
+        "low": 5,
+        "rainfall": 15,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Excellent clarity, Everest views"
+      },
+      {
+        "month": 12,
+        "high": 18,
+        "low": 2,
+        "rainfall": 15,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cold, snow on passes, clear days"
+      }
+    ]
+  },
+  "Delhi": {
+    "country": "India",
+    "lat": 28.6139,
+    "lng": 77.209,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 20,
+        "low": 7,
+        "rainfall": 20,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cool and foggy, pleasant days"
+      },
+      {
+        "month": 2,
+        "high": 23,
+        "low": 10,
+        "rainfall": 20,
+        "season": "winter",
+        "rating": "excellent",
+        "desc": "Lovely spring-like weather"
+      },
+      {
+        "month": 3,
+        "high": 29,
+        "low": 15,
+        "rainfall": 15,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Warm and beautiful"
+      },
+      {
+        "month": 4,
+        "high": 36,
+        "low": 21,
+        "rainfall": 10,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Getting hot, manageable"
+      },
+      {
+        "month": 5,
+        "high": 40,
+        "low": 27,
+        "rainfall": 20,
+        "season": "hot",
+        "rating": "fair",
+        "desc": "Extremely hot — over 40°C possible"
+      },
+      {
+        "month": 6,
+        "high": 40,
+        "low": 29,
+        "rainfall": 55,
+        "season": "hot",
+        "rating": "fair",
+        "desc": "Scorching heat before monsoon"
+      },
+      {
+        "month": 7,
+        "high": 35,
+        "low": 27,
+        "rainfall": 195,
+        "season": "monsoon",
+        "rating": "fair",
+        "desc": "Monsoon brings relief from heat"
+      },
+      {
+        "month": 8,
+        "high": 33,
+        "low": 26,
+        "rainfall": 240,
+        "season": "monsoon",
+        "rating": "fair",
+        "desc": "Heavy monsoon rains, flooding"
+      },
+      {
+        "month": 9,
+        "high": 34,
+        "low": 25,
+        "rainfall": 115,
+        "season": "monsoon",
+        "rating": "fair",
+        "desc": "Rains tapering, still humid"
+      },
+      {
+        "month": 10,
+        "high": 33,
+        "low": 19,
+        "rainfall": 10,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Perfect weather — warm and dry"
+      },
+      {
+        "month": 11,
+        "high": 27,
+        "low": 13,
+        "rainfall": 5,
+        "season": "winter",
+        "rating": "excellent",
+        "desc": "Ideal weather, slight haze"
+      },
+      {
+        "month": 12,
+        "high": 22,
+        "low": 8,
+        "rainfall": 10,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cool and clear, festive season"
+      }
+    ]
+  },
+  "Mumbai": {
+    "country": "India",
+    "lat": 19.076,
+    "lng": 72.8777,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 31,
+        "low": 16,
+        "rainfall": 2,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Perfect weather — warm and sunny"
+      },
+      {
+        "month": 2,
+        "high": 32,
+        "low": 17,
+        "rainfall": 1,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Beautiful, dry and comfortable"
+      },
+      {
+        "month": 3,
+        "high": 34,
+        "low": 20,
+        "rainfall": 1,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Getting hot but dry"
+      },
+      {
+        "month": 4,
+        "high": 36,
+        "low": 24,
+        "rainfall": 1,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Very hot and humid"
+      },
+      {
+        "month": 5,
+        "high": 34,
+        "low": 27,
+        "rainfall": 10,
+        "season": "hot",
+        "rating": "fair",
+        "desc": "Extremely humid pre-monsoon"
+      },
+      {
+        "month": 6,
+        "high": 32,
+        "low": 26,
+        "rainfall": 480,
+        "season": "monsoon",
+        "rating": "poor",
+        "desc": "Monsoon arrives with a bang — very heavy rain"
+      },
+      {
+        "month": 7,
+        "high": 30,
+        "low": 25,
+        "rainfall": 700,
+        "season": "monsoon",
+        "rating": "poor",
+        "desc": "Wettest month — city flooding common"
+      },
+      {
+        "month": 8,
+        "high": 30,
+        "low": 25,
+        "rainfall": 495,
+        "season": "monsoon",
+        "rating": "poor",
+        "desc": "Continued heavy monsoon"
+      },
+      {
+        "month": 9,
+        "high": 30,
+        "low": 24,
+        "rainfall": 280,
+        "season": "monsoon",
+        "rating": "fair",
+        "desc": "Monsoon easing"
+      },
+      {
+        "month": 10,
+        "high": 33,
+        "low": 23,
+        "rainfall": 60,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Drying out, pleasant"
+      },
+      {
+        "month": 11,
+        "high": 33,
+        "low": 20,
+        "rainfall": 10,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Dry season — lovely weather"
+      },
+      {
+        "month": 12,
+        "high": 31,
+        "low": 17,
+        "rainfall": 3,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Ideal conditions, cool evenings"
+      }
+    ]
+  },
+  "Goa": {
+    "country": "India",
+    "lat": 15.2993,
+    "lng": 74.124,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 32,
+        "low": 20,
+        "rainfall": 2,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Peak season — perfect beach weather"
+      },
+      {
+        "month": 2,
+        "high": 33,
+        "low": 22,
+        "rainfall": 1,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Hot and sunny, great beaches"
+      },
+      {
+        "month": 3,
+        "high": 35,
+        "low": 24,
+        "rainfall": 2,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Very hot, still enjoyable"
+      },
+      {
+        "month": 4,
+        "high": 36,
+        "low": 26,
+        "rainfall": 15,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Hot, some humidity"
+      },
+      {
+        "month": 5,
+        "high": 35,
+        "low": 26,
+        "rainfall": 50,
+        "season": "shoulder",
+        "rating": "fair",
+        "desc": "Getting wet, pre-monsoon storms"
+      },
+      {
+        "month": 6,
+        "high": 31,
+        "low": 25,
+        "rainfall": 450,
+        "season": "monsoon",
+        "rating": "poor",
+        "desc": "Monsoon — many places closed"
+      },
+      {
+        "month": 7,
+        "high": 30,
+        "low": 24,
+        "rainfall": 550,
+        "season": "monsoon",
+        "rating": "poor",
+        "desc": "Wettest month — peak monsoon"
+      },
+      {
+        "month": 8,
+        "high": 29,
+        "low": 24,
+        "rainfall": 420,
+        "season": "monsoon",
+        "rating": "poor",
+        "desc": "Continued heavy monsoon"
+      },
+      {
+        "month": 9,
+        "high": 30,
+        "low": 24,
+        "rainfall": 210,
+        "season": "monsoon",
+        "rating": "fair",
+        "desc": "Rains easing, green and beautiful"
+      },
+      {
+        "month": 10,
+        "high": 32,
+        "low": 24,
+        "rainfall": 90,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Season starting, good value"
+      },
+      {
+        "month": 11,
+        "high": 33,
+        "low": 22,
+        "rainfall": 30,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Beach season begins"
+      },
+      {
+        "month": 12,
+        "high": 32,
+        "low": 20,
+        "rainfall": 10,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Peak season, Christmas celebrations"
+      }
+    ]
+  },
+  "Manila": {
+    "country": "Philippines",
+    "lat": 14.5995,
+    "lng": 120.9842,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 30,
+        "low": 21,
+        "rainfall": 20,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Dry season — cool and sunny"
+      },
+      {
+        "month": 2,
+        "high": 31,
+        "low": 21,
+        "rainfall": 10,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Best month — dry and breezy"
+      },
+      {
+        "month": 3,
+        "high": 33,
+        "low": 22,
+        "rainfall": 15,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Hot and dry"
+      },
+      {
+        "month": 4,
+        "high": 35,
+        "low": 24,
+        "rainfall": 35,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Very hot, pre-monsoon"
+      },
+      {
+        "month": 5,
+        "high": 35,
+        "low": 25,
+        "rainfall": 130,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Monsoon begins"
+      },
+      {
+        "month": 6,
+        "high": 33,
+        "low": 25,
+        "rainfall": 265,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Heavy rains, typhoon season starts"
+      },
+      {
+        "month": 7,
+        "high": 31,
+        "low": 24,
+        "rainfall": 385,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Peak typhoon season — very dangerous"
+      },
+      {
+        "month": 8,
+        "high": 31,
+        "low": 24,
+        "rainfall": 360,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Typhoon season, very heavy rain"
+      },
+      {
+        "month": 9,
+        "high": 31,
+        "low": 24,
+        "rainfall": 285,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "High typhoon risk"
+      },
+      {
+        "month": 10,
+        "high": 31,
+        "low": 24,
+        "rainfall": 195,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Typhoons possible, rains easing"
+      },
+      {
+        "month": 11,
+        "high": 31,
+        "low": 23,
+        "rainfall": 100,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Drying out, pleasant weather"
+      },
+      {
+        "month": 12,
+        "high": 30,
+        "low": 22,
+        "rainfall": 60,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Dry season returns, festive"
+      }
+    ]
+  },
+  "Seoul": {
+    "country": "South Korea",
+    "lat": 37.5665,
+    "lng": 126.978,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 1,
+        "low": -6,
+        "rainfall": 25,
+        "season": "winter",
+        "rating": "fair",
+        "desc": "Very cold, snow possible"
+      },
+      {
+        "month": 2,
+        "high": 4,
+        "low": -4,
+        "rainfall": 35,
+        "season": "winter",
+        "rating": "fair",
+        "desc": "Cold but starting to warm"
+      },
+      {
+        "month": 3,
+        "high": 11,
+        "low": 1,
+        "rainfall": 45,
+        "season": "spring",
+        "rating": "good",
+        "desc": "Cherry blossoms starting, cool"
+      },
+      {
+        "month": 4,
+        "high": 18,
+        "low": 7,
+        "rainfall": 75,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Peak cherry blossoms — stunning!"
+      },
+      {
+        "month": 5,
+        "high": 24,
+        "low": 13,
+        "rainfall": 95,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Warm and beautiful spring"
+      },
+      {
+        "month": 6,
+        "high": 28,
+        "low": 18,
+        "rainfall": 130,
+        "season": "rainy",
+        "rating": "fair",
+        "desc": "Rainy season beginning"
+      },
+      {
+        "month": 7,
+        "high": 29,
+        "low": 22,
+        "rainfall": 360,
+        "season": "rainy",
+        "rating": "poor",
+        "desc": "Heavy monsoon rains (jangma)"
+      },
+      {
+        "month": 8,
+        "high": 30,
+        "low": 23,
+        "rainfall": 270,
+        "season": "summer",
+        "rating": "fair",
+        "desc": "Hot and humid, rains tapering"
+      },
+      {
+        "month": 9,
+        "high": 25,
+        "low": 17,
+        "rainfall": 130,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Gorgeous autumn weather"
+      },
+      {
+        "month": 10,
+        "high": 18,
+        "low": 9,
+        "rainfall": 50,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Peak fall foliage — spectacular"
+      },
+      {
+        "month": 11,
+        "high": 10,
+        "low": 2,
+        "rainfall": 55,
+        "season": "autumn",
+        "rating": "good",
+        "desc": "Cold but beautiful"
+      },
+      {
+        "month": 12,
+        "high": 3,
+        "low": -4,
+        "rainfall": 25,
+        "season": "winter",
+        "rating": "fair",
+        "desc": "Cold and dry, winter activities"
+      }
+    ]
+  },
+  "Hong Kong": {
+    "country": "Hong Kong",
+    "lat": 22.3193,
+    "lng": 114.1694,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 18,
+        "low": 13,
+        "rainfall": 30,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool and dry — ideal weather"
+      },
+      {
+        "month": 2,
+        "high": 18,
+        "low": 13,
+        "rainfall": 45,
+        "season": "dry",
+        "rating": "good",
+        "desc": "Cool and misty"
+      },
+      {
+        "month": 3,
+        "high": 21,
+        "low": 16,
+        "rainfall": 75,
+        "season": "spring",
+        "rating": "good",
+        "desc": "Humid and foggy"
+      },
+      {
+        "month": 4,
+        "high": 25,
+        "low": 20,
+        "rainfall": 140,
+        "season": "spring",
+        "rating": "good",
+        "desc": "Warming up, some rain"
+      },
+      {
+        "month": 5,
+        "high": 29,
+        "low": 24,
+        "rainfall": 290,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Hot and very humid"
+      },
+      {
+        "month": 6,
+        "high": 31,
+        "low": 26,
+        "rainfall": 390,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Typhoon season, heavy rain"
+      },
+      {
+        "month": 7,
+        "high": 31,
+        "low": 26,
+        "rainfall": 380,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Peak typhoon and rain season"
+      },
+      {
+        "month": 8,
+        "high": 31,
+        "low": 26,
+        "rainfall": 400,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Wettest month, typhoons possible"
+      },
+      {
+        "month": 9,
+        "high": 30,
+        "low": 25,
+        "rainfall": 290,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Typhoon risk reducing"
+      },
+      {
+        "month": 10,
+        "high": 27,
+        "low": 22,
+        "rainfall": 100,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Perfect autumn weather"
+      },
+      {
+        "month": 11,
+        "high": 23,
+        "low": 17,
+        "rainfall": 40,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool and dry — great for hiking"
+      },
+      {
+        "month": 12,
+        "high": 19,
+        "low": 14,
+        "rainfall": 30,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool and comfortable"
+      }
+    ]
+  },
+  "Taipei": {
+    "country": "Taiwan",
+    "lat": 25.033,
+    "lng": 121.5654,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 19,
+        "low": 13,
+        "rainfall": 100,
+        "season": "winter",
+        "rating": "fair",
+        "desc": "Cool, overcast and drizzly"
+      },
+      {
+        "month": 2,
+        "high": 18,
+        "low": 13,
+        "rainfall": 155,
+        "season": "winter",
+        "rating": "fair",
+        "desc": "Wet and grey"
+      },
+      {
+        "month": 3,
+        "high": 21,
+        "low": 15,
+        "rainfall": 175,
+        "season": "spring",
+        "rating": "fair",
+        "desc": "Warming but still wet"
+      },
+      {
+        "month": 4,
+        "high": 26,
+        "low": 19,
+        "rainfall": 155,
+        "season": "spring",
+        "rating": "good",
+        "desc": "Warm spring, manageable rain"
+      },
+      {
+        "month": 5,
+        "high": 30,
+        "low": 23,
+        "rainfall": 210,
+        "season": "spring",
+        "rating": "good",
+        "desc": "Hot and humid, regular rain"
+      },
+      {
+        "month": 6,
+        "high": 33,
+        "low": 26,
+        "rainfall": 295,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Very hot and wet, typhoon season"
+      },
+      {
+        "month": 7,
+        "high": 34,
+        "low": 27,
+        "rainfall": 225,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Peak summer, typhoon risk"
+      },
+      {
+        "month": 8,
+        "high": 34,
+        "low": 27,
+        "rainfall": 305,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Hottest, typhoon season"
+      },
+      {
+        "month": 9,
+        "high": 31,
+        "low": 25,
+        "rainfall": 360,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Peak typhoon month — high risk"
+      },
+      {
+        "month": 10,
+        "high": 27,
+        "low": 22,
+        "rainfall": 155,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Best season — mild and clearer"
+      },
+      {
+        "month": 11,
+        "high": 24,
+        "low": 18,
+        "rainfall": 100,
+        "season": "autumn",
+        "rating": "good",
+        "desc": "Pleasant autumn weather"
+      },
+      {
+        "month": 12,
+        "high": 20,
+        "low": 14,
+        "rainfall": 80,
+        "season": "winter",
+        "rating": "fair",
+        "desc": "Cool and overcast"
+      }
+    ]
+  },
+  "Yangon": {
+    "country": "Myanmar",
+    "lat": 16.8661,
+    "lng": 96.1951,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 32,
+        "low": 18,
+        "rainfall": 5,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool and dry — peak season"
+      },
+      {
+        "month": 2,
+        "high": 35,
+        "low": 19,
+        "rainfall": 5,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Hot and dry, great weather"
+      },
+      {
+        "month": 3,
+        "high": 37,
+        "low": 22,
+        "rainfall": 15,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Very hot, pre-monsoon"
+      },
+      {
+        "month": 4,
+        "high": 38,
+        "low": 25,
+        "rainfall": 30,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Extremely hot, some storms"
+      },
+      {
+        "month": 5,
+        "high": 33,
+        "low": 25,
+        "rainfall": 300,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Monsoon arrives — heavy rains"
+      },
+      {
+        "month": 6,
+        "high": 30,
+        "low": 25,
+        "rainfall": 545,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Very heavy monsoon rains"
+      },
+      {
+        "month": 7,
+        "high": 29,
+        "low": 24,
+        "rainfall": 545,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Wettest months — widespread flooding"
+      },
+      {
+        "month": 8,
+        "high": 30,
+        "low": 24,
+        "rainfall": 600,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Very wet, city can flood"
+      },
+      {
+        "month": 9,
+        "high": 30,
+        "low": 24,
+        "rainfall": 400,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Heavy rains continuing"
+      },
+      {
+        "month": 10,
+        "high": 31,
+        "low": 24,
+        "rainfall": 185,
+        "season": "shoulder",
+        "rating": "fair",
+        "desc": "Rains easing, getting pleasant"
+      },
+      {
+        "month": 11,
+        "high": 32,
+        "low": 22,
+        "rainfall": 50,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Dry season returns — lovely"
+      },
+      {
+        "month": 12,
+        "high": 31,
+        "low": 19,
+        "rainfall": 15,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Perfect dry season weather"
+      }
+    ]
+  },
+  "Colombo": {
+    "country": "Sri Lanka",
+    "lat": 6.9271,
+    "lng": 79.8612,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 31,
+        "low": 22,
+        "rainfall": 85,
+        "season": "dry",
+        "rating": "good",
+        "desc": "Warm and mostly dry"
+      },
+      {
+        "month": 2,
+        "high": 32,
+        "low": 22,
+        "rainfall": 70,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Warm and sunny — great time"
+      },
+      {
+        "month": 3,
+        "high": 32,
+        "low": 23,
+        "rainfall": 115,
+        "season": "spring",
+        "rating": "good",
+        "desc": "Warm with some showers"
+      },
+      {
+        "month": 4,
+        "high": 32,
+        "low": 24,
+        "rainfall": 230,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "First monsoon (inter-monsoon)begins"
+      },
+      {
+        "month": 5,
+        "high": 31,
+        "low": 25,
+        "rainfall": 375,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Southwest monsoon — heavy rains"
+      },
+      {
+        "month": 6,
+        "high": 30,
+        "low": 24,
+        "rainfall": 200,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Wet season continues"
+      },
+      {
+        "month": 7,
+        "high": 29,
+        "low": 24,
+        "rainfall": 130,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Still wet but manageable"
+      },
+      {
+        "month": 8,
+        "high": 29,
+        "low": 24,
+        "rainfall": 105,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet season tapering"
+      },
+      {
+        "month": 9,
+        "high": 30,
+        "low": 24,
+        "rainfall": 245,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Northeast monsoon starts"
+      },
+      {
+        "month": 10,
+        "high": 30,
+        "low": 24,
+        "rainfall": 355,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Heavy inter-monsoon rains"
+      },
+      {
+        "month": 11,
+        "high": 29,
+        "low": 23,
+        "rainfall": 235,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet with some breaks"
+      },
+      {
+        "month": 12,
+        "high": 30,
+        "low": 23,
+        "rainfall": 165,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Drying out, pleasant again"
+      }
+    ]
+  },
+  "Luang Prabang": {
+    "country": "Laos",
+    "lat": 19.8845,
+    "lng": 102.1348,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 28,
+        "low": 14,
+        "rainfall": 15,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool and dry — perfect conditions"
+      },
+      {
+        "month": 2,
+        "high": 31,
+        "low": 15,
+        "rainfall": 15,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Warm days, cool nights"
+      },
+      {
+        "month": 3,
+        "high": 35,
+        "low": 19,
+        "rainfall": 25,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Hot and dry, haze from burning"
+      },
+      {
+        "month": 4,
+        "high": 37,
+        "low": 22,
+        "rainfall": 60,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Very hot, New Year (Pi Mai) festival"
+      },
+      {
+        "month": 5,
+        "high": 35,
+        "low": 23,
+        "rainfall": 175,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Monsoon begins"
+      },
+      {
+        "month": 6,
+        "high": 32,
+        "low": 23,
+        "rainfall": 175,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet season, green and lush"
+      },
+      {
+        "month": 7,
+        "high": 31,
+        "low": 23,
+        "rainfall": 215,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Regular monsoon rains"
+      },
+      {
+        "month": 8,
+        "high": 31,
+        "low": 23,
+        "rainfall": 230,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Wettest month, Mekong rises"
+      },
+      {
+        "month": 9,
+        "high": 31,
+        "low": 22,
+        "rainfall": 205,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Still very wet"
+      },
+      {
+        "month": 10,
+        "high": 30,
+        "low": 21,
+        "rainfall": 90,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Rains reducing, beautiful"
+      },
+      {
+        "month": 11,
+        "high": 30,
+        "low": 17,
+        "rainfall": 25,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool dry season, ideal"
+      },
+      {
+        "month": 12,
+        "high": 28,
+        "low": 14,
+        "rainfall": 10,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool and dry — beautiful"
+      }
+    ]
+  },
+  "Phnom Penh": {
+    "country": "Cambodia",
+    "lat": 11.5564,
+    "lng": 104.9282,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 31,
+        "low": 21,
+        "rainfall": 10,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool dry season"
+      },
+      {
+        "month": 2,
+        "high": 33,
+        "low": 22,
+        "rainfall": 10,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Hot and dry"
+      },
+      {
+        "month": 3,
+        "high": 35,
+        "low": 24,
+        "rainfall": 40,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Very hot"
+      },
+      {
+        "month": 4,
+        "high": 36,
+        "low": 25,
+        "rainfall": 80,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Extremely hot, first storms"
+      },
+      {
+        "month": 5,
+        "high": 34,
+        "low": 25,
+        "rainfall": 175,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Monsoon begins"
+      },
+      {
+        "month": 6,
+        "high": 33,
+        "low": 25,
+        "rainfall": 175,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Regular monsoon rains"
+      },
+      {
+        "month": 7,
+        "high": 32,
+        "low": 25,
+        "rainfall": 175,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet season"
+      },
+      {
+        "month": 8,
+        "high": 32,
+        "low": 25,
+        "rainfall": 185,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Very wet, flooding possible"
+      },
+      {
+        "month": 9,
+        "high": 31,
+        "low": 24,
+        "rainfall": 245,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Wettest month"
+      },
+      {
+        "month": 10,
+        "high": 31,
+        "low": 24,
+        "rainfall": 230,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Still wet, Water Festival"
+      },
+      {
+        "month": 11,
+        "high": 31,
+        "low": 23,
+        "rainfall": 60,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Dry season returning"
+      },
+      {
+        "month": 12,
+        "high": 31,
+        "low": 21,
+        "rainfall": 20,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool and dry, peak season"
+      }
+    ]
+  },
+  "Jakarta": {
+    "country": "Indonesia",
+    "lat": -6.2088,
+    "lng": 106.8456,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 29,
+        "low": 24,
+        "rainfall": 350,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Wet season peak, heavy flooding"
+      },
+      {
+        "month": 2,
+        "high": 29,
+        "low": 24,
+        "rainfall": 300,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Very heavy rains, flooding risk"
+      },
+      {
+        "month": 3,
+        "high": 30,
+        "low": 24,
+        "rainfall": 215,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Rains easing slightly"
+      },
+      {
+        "month": 4,
+        "high": 31,
+        "low": 25,
+        "rainfall": 140,
+        "season": "shoulder",
+        "rating": "fair",
+        "desc": "Transitioning to drier season"
+      },
+      {
+        "month": 5,
+        "high": 31,
+        "low": 25,
+        "rainfall": 115,
+        "season": "drier",
+        "rating": "good",
+        "desc": "Drier and more pleasant"
+      },
+      {
+        "month": 6,
+        "high": 31,
+        "low": 24,
+        "rainfall": 75,
+        "season": "dry",
+        "rating": "good",
+        "desc": "Dry season, less humid"
+      },
+      {
+        "month": 7,
+        "high": 31,
+        "low": 23,
+        "rainfall": 60,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Driest month, ideal for sightseeing"
+      },
+      {
+        "month": 8,
+        "high": 32,
+        "low": 23,
+        "rainfall": 45,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Hot and dry"
+      },
+      {
+        "month": 9,
+        "high": 32,
+        "low": 24,
+        "rainfall": 65,
+        "season": "dry",
+        "rating": "good",
+        "desc": "Still dry, warming up"
+      },
+      {
+        "month": 10,
+        "high": 32,
+        "low": 24,
+        "rainfall": 115,
+        "season": "shoulder",
+        "rating": "fair",
+        "desc": "Rains returning"
+      },
+      {
+        "month": 11,
+        "high": 31,
+        "low": 24,
+        "rainfall": 145,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet season starting"
+      },
+      {
+        "month": 12,
+        "high": 30,
+        "low": 24,
+        "rainfall": 205,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet season — rain expected daily"
+      }
+    ]
+  },
+  "Yogyakarta": {
+    "country": "Indonesia",
+    "lat": -7.7956,
+    "lng": 110.3695,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 30,
+        "low": 23,
+        "rainfall": 330,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet season — explore temples between showers"
+      },
+      {
+        "month": 2,
+        "high": 30,
+        "low": 23,
+        "rainfall": 295,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Heavy rains, green countryside"
+      },
+      {
+        "month": 3,
+        "high": 31,
+        "low": 23,
+        "rainfall": 260,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Rains easing"
+      },
+      {
+        "month": 4,
+        "high": 32,
+        "low": 23,
+        "rainfall": 130,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Transitioning to dry season"
+      },
+      {
+        "month": 5,
+        "high": 31,
+        "low": 22,
+        "rainfall": 85,
+        "season": "dry",
+        "rating": "good",
+        "desc": "Drier and pleasant"
+      },
+      {
+        "month": 6,
+        "high": 30,
+        "low": 21,
+        "rainfall": 45,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool dry season, perfect for Borobudur"
+      },
+      {
+        "month": 7,
+        "high": 30,
+        "low": 20,
+        "rainfall": 20,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Driest month — best time to visit"
+      },
+      {
+        "month": 8,
+        "high": 30,
+        "low": 20,
+        "rainfall": 25,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Dry and comfortable"
+      },
+      {
+        "month": 9,
+        "high": 31,
+        "low": 21,
+        "rainfall": 40,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Still dry, great weather"
+      },
+      {
+        "month": 10,
+        "high": 32,
+        "low": 22,
+        "rainfall": 100,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Rains beginning again"
+      },
+      {
+        "month": 11,
+        "high": 31,
+        "low": 23,
+        "rainfall": 175,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet season returning"
+      },
+      {
+        "month": 12,
+        "high": 30,
+        "low": 23,
+        "rainfall": 280,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet season — lush and green"
+      }
+    ]
+  },
+  "Penang": {
+    "country": "Malaysia",
+    "lat": 5.4141,
+    "lng": 100.3288,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 31,
+        "low": 23,
+        "rainfall": 65,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Hot and dry — perfect beach weather"
+      },
+      {
+        "month": 2,
+        "high": 32,
+        "low": 23,
+        "rainfall": 45,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Driest month, ideal conditions"
+      },
+      {
+        "month": 3,
+        "high": 33,
+        "low": 24,
+        "rainfall": 100,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Warm with occasional showers"
+      },
+      {
+        "month": 4,
+        "high": 33,
+        "low": 25,
+        "rainfall": 175,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Thunderstorms in afternoons"
+      },
+      {
+        "month": 5,
+        "high": 32,
+        "low": 25,
+        "rainfall": 235,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Rainy season, monsoon arriving"
+      },
+      {
+        "month": 6,
+        "high": 32,
+        "low": 25,
+        "rainfall": 155,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet but manageable"
+      },
+      {
+        "month": 7,
+        "high": 32,
+        "low": 25,
+        "rainfall": 175,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Showers and sunshine"
+      },
+      {
+        "month": 8,
+        "high": 32,
+        "low": 25,
+        "rainfall": 215,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Regular afternoon storms"
+      },
+      {
+        "month": 9,
+        "high": 32,
+        "low": 24,
+        "rainfall": 260,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wetter period"
+      },
+      {
+        "month": 10,
+        "high": 32,
+        "low": 24,
+        "rainfall": 325,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Wettest month, northeast monsoon"
+      },
+      {
+        "month": 11,
+        "high": 31,
+        "low": 24,
+        "rainfall": 290,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Still wet, easing late month"
+      },
+      {
+        "month": 12,
+        "high": 31,
+        "low": 23,
+        "rainfall": 140,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Drying out, pleasant evenings"
+      }
+    ]
+  },
+  "Kota Kinabalu": {
+    "country": "Malaysia",
+    "lat": 5.9804,
+    "lng": 116.0735,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 30,
+        "low": 23,
+        "rainfall": 150,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet season, but sunny intervals"
+      },
+      {
+        "month": 2,
+        "high": 31,
+        "low": 23,
+        "rainfall": 65,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Driest month — ideal for diving and beaches"
+      },
+      {
+        "month": 3,
+        "high": 32,
+        "low": 24,
+        "rainfall": 65,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Hot and sunny, great conditions"
+      },
+      {
+        "month": 4,
+        "high": 33,
+        "low": 24,
+        "rainfall": 100,
+        "season": "dry",
+        "rating": "good",
+        "desc": "Warm with occasional showers"
+      },
+      {
+        "month": 5,
+        "high": 33,
+        "low": 25,
+        "rainfall": 160,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Getting wetter, still enjoyable"
+      },
+      {
+        "month": 6,
+        "high": 33,
+        "low": 25,
+        "rainfall": 215,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Regular afternoon rains"
+      },
+      {
+        "month": 7,
+        "high": 32,
+        "low": 25,
+        "rainfall": 245,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet season, warm seas"
+      },
+      {
+        "month": 8,
+        "high": 32,
+        "low": 25,
+        "rainfall": 265,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Showers most days"
+      },
+      {
+        "month": 9,
+        "high": 32,
+        "low": 25,
+        "rainfall": 305,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Wetter period, heavy showers"
+      },
+      {
+        "month": 10,
+        "high": 32,
+        "low": 24,
+        "rainfall": 330,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Wettest period — expect rain"
+      },
+      {
+        "month": 11,
+        "high": 31,
+        "low": 24,
+        "rainfall": 315,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Still wet, easing toward end"
+      },
+      {
+        "month": 12,
+        "high": 31,
+        "low": 24,
+        "rainfall": 250,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet season but manageable"
+      }
+    ]
+  },
+  "Sihanoukville": {
+    "country": "Cambodia",
+    "lat": 10.6098,
+    "lng": 103.5294,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 31,
+        "low": 22,
+        "rainfall": 10,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Dry season — perfect beach conditions"
+      },
+      {
+        "month": 2,
+        "high": 32,
+        "low": 22,
+        "rainfall": 10,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Hot and sunny, great for islands"
+      },
+      {
+        "month": 3,
+        "high": 33,
+        "low": 24,
+        "rainfall": 25,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Very hot, calm seas"
+      },
+      {
+        "month": 4,
+        "high": 34,
+        "low": 25,
+        "rainfall": 70,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Extremely hot, first storms"
+      },
+      {
+        "month": 5,
+        "high": 32,
+        "low": 25,
+        "rainfall": 220,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Monsoon begins, rough seas"
+      },
+      {
+        "month": 6,
+        "high": 31,
+        "low": 25,
+        "rainfall": 310,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Heavy rain, islands less accessible"
+      },
+      {
+        "month": 7,
+        "high": 30,
+        "low": 25,
+        "rainfall": 300,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Very wet, choppy seas"
+      },
+      {
+        "month": 8,
+        "high": 30,
+        "low": 25,
+        "rainfall": 290,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Wet season peak"
+      },
+      {
+        "month": 9,
+        "high": 30,
+        "low": 24,
+        "rainfall": 345,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Wettest month"
+      },
+      {
+        "month": 10,
+        "high": 30,
+        "low": 24,
+        "rainfall": 305,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Still wet, seas calming"
+      },
+      {
+        "month": 11,
+        "high": 31,
+        "low": 23,
+        "rainfall": 80,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Dry season returns — paradise!"
+      },
+      {
+        "month": 12,
+        "high": 31,
+        "low": 22,
+        "rainfall": 30,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool and dry, peak beach season"
+      }
+    ]
+  },
+  "Pokhara": {
+    "country": "Nepal",
+    "lat": 28.2096,
+    "lng": 83.9856,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 18,
+        "low": 4,
+        "rainfall": 25,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cold, clear Annapurna views"
+      },
+      {
+        "month": 2,
+        "high": 21,
+        "low": 6,
+        "rainfall": 50,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Warming up, good trekking conditions"
+      },
+      {
+        "month": 3,
+        "high": 25,
+        "low": 10,
+        "rainfall": 90,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Rhododendrons in bloom, great trekking"
+      },
+      {
+        "month": 4,
+        "high": 27,
+        "low": 13,
+        "rainfall": 130,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Perfect hiking season"
+      },
+      {
+        "month": 5,
+        "high": 28,
+        "low": 17,
+        "rainfall": 280,
+        "season": "spring",
+        "rating": "good",
+        "desc": "Getting wetter, still lovely"
+      },
+      {
+        "month": 6,
+        "high": 28,
+        "low": 19,
+        "rainfall": 635,
+        "season": "monsoon",
+        "rating": "poor",
+        "desc": "Heavy monsoon — trekking difficult"
+      },
+      {
+        "month": 7,
+        "high": 27,
+        "low": 20,
+        "rainfall": 895,
+        "season": "monsoon",
+        "rating": "poor",
+        "desc": "Wettest city in Nepal — very heavy rain"
+      },
+      {
+        "month": 8,
+        "high": 27,
+        "low": 20,
+        "rainfall": 795,
+        "season": "monsoon",
+        "rating": "poor",
+        "desc": "Still extremely wet"
+      },
+      {
+        "month": 9,
+        "high": 26,
+        "low": 18,
+        "rainfall": 505,
+        "season": "monsoon",
+        "rating": "fair",
+        "desc": "Monsoon easing, lush landscapes"
+      },
+      {
+        "month": 10,
+        "high": 24,
+        "low": 12,
+        "rainfall": 115,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Best trekking season — stunning clarity"
+      },
+      {
+        "month": 11,
+        "high": 22,
+        "low": 7,
+        "rainfall": 30,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Clear skies, Annapurna views perfect"
+      },
+      {
+        "month": 12,
+        "high": 19,
+        "low": 4,
+        "rainfall": 25,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cold but clear, fewer crowds"
+      }
+    ]
+  },
+  "Chitwan": {
+    "country": "Nepal",
+    "lat": 27.5291,
+    "lng": 84.3542,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 24,
+        "low": 7,
+        "rainfall": 20,
+        "season": "winter",
+        "rating": "excellent",
+        "desc": "Cool mornings, warm days — best wildlife viewing"
+      },
+      {
+        "month": 2,
+        "high": 27,
+        "low": 10,
+        "rainfall": 30,
+        "season": "winter",
+        "rating": "excellent",
+        "desc": "Warm and dry, excellent jungle safaris"
+      },
+      {
+        "month": 3,
+        "high": 32,
+        "low": 15,
+        "rainfall": 30,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Hot days, good wildlife spotting"
+      },
+      {
+        "month": 4,
+        "high": 36,
+        "low": 20,
+        "rainfall": 50,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Very hot, animals near water"
+      },
+      {
+        "month": 5,
+        "high": 37,
+        "low": 24,
+        "rainfall": 140,
+        "season": "hot",
+        "rating": "fair",
+        "desc": "Extremely hot, first monsoon showers"
+      },
+      {
+        "month": 6,
+        "high": 34,
+        "low": 25,
+        "rainfall": 340,
+        "season": "monsoon",
+        "rating": "poor",
+        "desc": "Monsoon — park often closes"
+      },
+      {
+        "month": 7,
+        "high": 32,
+        "low": 25,
+        "rainfall": 460,
+        "season": "monsoon",
+        "rating": "poor",
+        "desc": "Heavy flooding, most activities closed"
+      },
+      {
+        "month": 8,
+        "high": 32,
+        "low": 25,
+        "rainfall": 400,
+        "season": "monsoon",
+        "rating": "poor",
+        "desc": "Continued heavy monsoon"
+      },
+      {
+        "month": 9,
+        "high": 31,
+        "low": 24,
+        "rainfall": 290,
+        "season": "monsoon",
+        "rating": "fair",
+        "desc": "Rains easing, park reopening"
+      },
+      {
+        "month": 10,
+        "high": 30,
+        "low": 18,
+        "rainfall": 90,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Ideal wildlife safari season"
+      },
+      {
+        "month": 11,
+        "high": 28,
+        "low": 12,
+        "rainfall": 20,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Cool and dry — excellent rhino spotting"
+      },
+      {
+        "month": 12,
+        "high": 25,
+        "low": 8,
+        "rainfall": 15,
+        "season": "winter",
+        "rating": "excellent",
+        "desc": "Cool, clear and great for wildlife"
+      }
+    ]
+  },
+  "Cebu": {
+    "country": "Philippines",
+    "lat": 10.3157,
+    "lng": 123.8854,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 30,
+        "low": 22,
+        "rainfall": 30,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Dry season — warm and sunny"
+      },
+      {
+        "month": 2,
+        "high": 31,
+        "low": 22,
+        "rainfall": 20,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Best month — ideal conditions"
+      },
+      {
+        "month": 3,
+        "high": 32,
+        "low": 23,
+        "rainfall": 20,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Hot, sunny beach weather"
+      },
+      {
+        "month": 4,
+        "high": 33,
+        "low": 24,
+        "rainfall": 35,
+        "season": "hot",
+        "rating": "excellent",
+        "desc": "Hot and mostly dry"
+      },
+      {
+        "month": 5,
+        "high": 33,
+        "low": 25,
+        "rainfall": 100,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Getting wetter, still pleasant"
+      },
+      {
+        "month": 6,
+        "high": 32,
+        "low": 25,
+        "rainfall": 165,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Rainy season begins"
+      },
+      {
+        "month": 7,
+        "high": 31,
+        "low": 25,
+        "rainfall": 195,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet season, typhoon risk"
+      },
+      {
+        "month": 8,
+        "high": 31,
+        "low": 25,
+        "rainfall": 195,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Rainy with typhoon risk"
+      },
+      {
+        "month": 9,
+        "high": 31,
+        "low": 24,
+        "rainfall": 175,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Typhoon season, heavy showers"
+      },
+      {
+        "month": 10,
+        "high": 31,
+        "low": 24,
+        "rainfall": 155,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Rains tapering, some typhoons"
+      },
+      {
+        "month": 11,
+        "high": 31,
+        "low": 23,
+        "rainfall": 100,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Drying out, pleasant"
+      },
+      {
+        "month": 12,
+        "high": 30,
+        "low": 22,
+        "rainfall": 60,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Dry season returns, festive"
+      }
+    ]
+  },
+  "El Nido": {
+    "country": "Philippines",
+    "lat": 11.1927,
+    "lng": 119.4079,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 30,
+        "low": 23,
+        "rainfall": 15,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Peak dry season — stunning lagoons"
+      },
+      {
+        "month": 2,
+        "high": 31,
+        "low": 23,
+        "rainfall": 10,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Driest month, ideal island-hopping"
+      },
+      {
+        "month": 3,
+        "high": 32,
+        "low": 24,
+        "rainfall": 20,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Hot, calm seas, great snorkelling"
+      },
+      {
+        "month": 4,
+        "high": 33,
+        "low": 25,
+        "rainfall": 35,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Hot and mostly dry"
+      },
+      {
+        "month": 5,
+        "high": 33,
+        "low": 26,
+        "rainfall": 105,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Getting wetter, still lovely"
+      },
+      {
+        "month": 6,
+        "high": 31,
+        "low": 25,
+        "rainfall": 230,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Monsoon arrives, rough seas"
+      },
+      {
+        "month": 7,
+        "high": 30,
+        "low": 25,
+        "rainfall": 295,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Heavy rains, island tours limited"
+      },
+      {
+        "month": 8,
+        "high": 30,
+        "low": 25,
+        "rainfall": 310,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Wet season peak"
+      },
+      {
+        "month": 9,
+        "high": 30,
+        "low": 25,
+        "rainfall": 295,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Typhoon risk, heavy rains"
+      },
+      {
+        "month": 10,
+        "high": 30,
+        "low": 24,
+        "rainfall": 250,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Rains easing, typhoon risk"
+      },
+      {
+        "month": 11,
+        "high": 31,
+        "low": 24,
+        "rainfall": 110,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Drying out, good value"
+      },
+      {
+        "month": 12,
+        "high": 30,
+        "low": 23,
+        "rainfall": 40,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Dry season returning, paradise!"
+      }
+    ]
+  },
+  "Busan": {
+    "country": "South Korea",
+    "lat": 35.1796,
+    "lng": 129.0756,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 7,
+        "low": 0,
+        "rainfall": 35,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cold but milder than Seoul, clear skies"
+      },
+      {
+        "month": 2,
+        "high": 9,
+        "low": 1,
+        "rainfall": 45,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cold with some sunny days"
+      },
+      {
+        "month": 3,
+        "high": 13,
+        "low": 5,
+        "rainfall": 65,
+        "season": "spring",
+        "rating": "good",
+        "desc": "Cherry blossoms — stunning views"
+      },
+      {
+        "month": 4,
+        "high": 18,
+        "low": 10,
+        "rainfall": 95,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Beautiful spring weather, beaches awakening"
+      },
+      {
+        "month": 5,
+        "high": 23,
+        "low": 15,
+        "rainfall": 110,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Warm and pleasant, beach season starting"
+      },
+      {
+        "month": 6,
+        "high": 26,
+        "low": 19,
+        "rainfall": 155,
+        "season": "summer",
+        "rating": "good",
+        "desc": "Warm beach weather, some rain"
+      },
+      {
+        "month": 7,
+        "high": 28,
+        "low": 23,
+        "rainfall": 250,
+        "season": "summer",
+        "rating": "fair",
+        "desc": "Hot and humid, peak beach month"
+      },
+      {
+        "month": 8,
+        "high": 29,
+        "low": 24,
+        "rainfall": 205,
+        "season": "summer",
+        "rating": "good",
+        "desc": "Hot and sunny, beaches packed"
+      },
+      {
+        "month": 9,
+        "high": 26,
+        "low": 19,
+        "rainfall": 150,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Pleasant autumn, sea still warm"
+      },
+      {
+        "month": 10,
+        "high": 21,
+        "low": 13,
+        "rainfall": 60,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Beautiful fall foliage"
+      },
+      {
+        "month": 11,
+        "high": 14,
+        "low": 6,
+        "rainfall": 60,
+        "season": "autumn",
+        "rating": "good",
+        "desc": "Cool autumn, getting quieter"
+      },
+      {
+        "month": 12,
+        "high": 9,
+        "low": 2,
+        "rainfall": 35,
+        "season": "winter",
+        "rating": "fair",
+        "desc": "Cold, seafood season"
+      }
+    ]
+  },
+  "Jeju": {
+    "country": "South Korea",
+    "lat": 33.4996,
+    "lng": 126.5312,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 8,
+        "low": 2,
+        "rainfall": 70,
+        "season": "winter",
+        "rating": "fair",
+        "desc": "Cold and windy, winter scenery"
+      },
+      {
+        "month": 2,
+        "high": 9,
+        "low": 2,
+        "rainfall": 75,
+        "season": "winter",
+        "rating": "fair",
+        "desc": "Cold with some sunny days"
+      },
+      {
+        "month": 3,
+        "high": 12,
+        "low": 6,
+        "rainfall": 90,
+        "season": "spring",
+        "rating": "good",
+        "desc": "Cherry blossoms arrive, milder than mainland"
+      },
+      {
+        "month": 4,
+        "high": 17,
+        "low": 11,
+        "rainfall": 100,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Beautiful spring blooms"
+      },
+      {
+        "month": 5,
+        "high": 21,
+        "low": 15,
+        "rainfall": 110,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Warm and green, great hiking"
+      },
+      {
+        "month": 6,
+        "high": 25,
+        "low": 20,
+        "rainfall": 200,
+        "season": "rainy",
+        "rating": "fair",
+        "desc": "Rainy season, humid"
+      },
+      {
+        "month": 7,
+        "high": 29,
+        "low": 24,
+        "rainfall": 290,
+        "season": "summer",
+        "rating": "fair",
+        "desc": "Hot and wet, beach season"
+      },
+      {
+        "month": 8,
+        "high": 30,
+        "low": 25,
+        "rainfall": 245,
+        "season": "summer",
+        "rating": "good",
+        "desc": "Hot beaches, some typhoon risk"
+      },
+      {
+        "month": 9,
+        "high": 26,
+        "low": 21,
+        "rainfall": 200,
+        "season": "autumn",
+        "rating": "good",
+        "desc": "Warm and pleasant"
+      },
+      {
+        "month": 10,
+        "high": 21,
+        "low": 15,
+        "rainfall": 90,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Beautiful fall colors"
+      },
+      {
+        "month": 11,
+        "high": 15,
+        "low": 9,
+        "rainfall": 75,
+        "season": "autumn",
+        "rating": "good",
+        "desc": "Cool and scenic"
+      },
+      {
+        "month": 12,
+        "high": 10,
+        "low": 4,
+        "rainfall": 65,
+        "season": "winter",
+        "rating": "fair",
+        "desc": "Cold, winter landscape"
+      }
+    ]
+  },
+  "Kaohsiung": {
+    "country": "Taiwan",
+    "lat": 22.6273,
+    "lng": 120.3014,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 24,
+        "low": 15,
+        "rainfall": 20,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Dry and sunny — best time to visit"
+      },
+      {
+        "month": 2,
+        "high": 25,
+        "low": 16,
+        "rainfall": 25,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Warm and mostly sunny"
+      },
+      {
+        "month": 3,
+        "high": 27,
+        "low": 18,
+        "rainfall": 30,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Warm spring weather"
+      },
+      {
+        "month": 4,
+        "high": 30,
+        "low": 22,
+        "rainfall": 45,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Hot and pleasant"
+      },
+      {
+        "month": 5,
+        "high": 32,
+        "low": 25,
+        "rainfall": 125,
+        "season": "wet",
+        "rating": "good",
+        "desc": "Hot, some afternoon showers"
+      },
+      {
+        "month": 6,
+        "high": 33,
+        "low": 27,
+        "rainfall": 265,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Hot and rainy, typhoon risk"
+      },
+      {
+        "month": 7,
+        "high": 34,
+        "low": 28,
+        "rainfall": 250,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Very hot, typhoon season"
+      },
+      {
+        "month": 8,
+        "high": 34,
+        "low": 27,
+        "rainfall": 295,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Hottest month, typhoon risk"
+      },
+      {
+        "month": 9,
+        "high": 32,
+        "low": 26,
+        "rainfall": 265,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Typhoon risk, heavy rain"
+      },
+      {
+        "month": 10,
+        "high": 30,
+        "low": 23,
+        "rainfall": 30,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Dry season returns — lovely weather"
+      },
+      {
+        "month": 11,
+        "high": 27,
+        "low": 19,
+        "rainfall": 20,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Sunny and pleasant"
+      },
+      {
+        "month": 12,
+        "high": 24,
+        "low": 16,
+        "rainfall": 15,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool, clear and comfortable"
+      }
+    ]
+  },
+  "Hualien": {
+    "country": "Taiwan",
+    "lat": 23.9912,
+    "lng": 121.6115,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 21,
+        "low": 14,
+        "rainfall": 80,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Mild winter, Taroko Gorge uncrowded"
+      },
+      {
+        "month": 2,
+        "high": 21,
+        "low": 14,
+        "rainfall": 110,
+        "season": "winter",
+        "rating": "fair",
+        "desc": "Overcast and rainy at times"
+      },
+      {
+        "month": 3,
+        "high": 23,
+        "low": 16,
+        "rainfall": 95,
+        "season": "spring",
+        "rating": "good",
+        "desc": "Warming up, gorge flowers blooming"
+      },
+      {
+        "month": 4,
+        "high": 26,
+        "low": 19,
+        "rainfall": 75,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Beautiful spring, ideal for hiking"
+      },
+      {
+        "month": 5,
+        "high": 29,
+        "low": 23,
+        "rainfall": 145,
+        "season": "spring",
+        "rating": "good",
+        "desc": "Warm, some afternoon showers"
+      },
+      {
+        "month": 6,
+        "high": 32,
+        "low": 26,
+        "rainfall": 225,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Hot and humid, plum rains"
+      },
+      {
+        "month": 7,
+        "high": 33,
+        "low": 27,
+        "rainfall": 230,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Peak typhoon season — high risk"
+      },
+      {
+        "month": 8,
+        "high": 33,
+        "low": 27,
+        "rainfall": 290,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Typhoon landfall risk — check before going"
+      },
+      {
+        "month": 9,
+        "high": 30,
+        "low": 25,
+        "rainfall": 430,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Wettest month, gorge may close"
+      },
+      {
+        "month": 10,
+        "high": 27,
+        "low": 22,
+        "rainfall": 185,
+        "season": "autumn",
+        "rating": "good",
+        "desc": "Rains reducing, gorge stunning"
+      },
+      {
+        "month": 11,
+        "high": 24,
+        "low": 18,
+        "rainfall": 90,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Beautiful weather, great hiking"
+      },
+      {
+        "month": 12,
+        "high": 22,
+        "low": 15,
+        "rainfall": 80,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cool and pleasant"
+      }
+    ]
+  },
+  "Bagan": {
+    "country": "Myanmar",
+    "lat": 21.1717,
+    "lng": 94.8585,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 30,
+        "low": 13,
+        "rainfall": 3,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool dawn, warm days — perfect for temples"
+      },
+      {
+        "month": 2,
+        "high": 34,
+        "low": 15,
+        "rainfall": 3,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Hot days, great sunsets over pagodas"
+      },
+      {
+        "month": 3,
+        "high": 38,
+        "low": 19,
+        "rainfall": 5,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Very hot, dramatic sunrises"
+      },
+      {
+        "month": 4,
+        "high": 40,
+        "low": 23,
+        "rainfall": 15,
+        "season": "hot",
+        "rating": "fair",
+        "desc": "Extremely hot — visit at dawn and dusk"
+      },
+      {
+        "month": 5,
+        "high": 38,
+        "low": 24,
+        "rainfall": 45,
+        "season": "shoulder",
+        "rating": "fair",
+        "desc": "Storms arriving, still hot"
+      },
+      {
+        "month": 6,
+        "high": 34,
+        "low": 24,
+        "rainfall": 130,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Monsoon rains, green but accessible"
+      },
+      {
+        "month": 7,
+        "high": 32,
+        "low": 24,
+        "rainfall": 170,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet but fewer crowds, lower prices"
+      },
+      {
+        "month": 8,
+        "high": 32,
+        "low": 24,
+        "rainfall": 195,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet season — misty panoramas"
+      },
+      {
+        "month": 9,
+        "high": 32,
+        "low": 23,
+        "rainfall": 145,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Rains tapering, atmospheric"
+      },
+      {
+        "month": 10,
+        "high": 32,
+        "low": 21,
+        "rainfall": 60,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Drying out — good value"
+      },
+      {
+        "month": 11,
+        "high": 31,
+        "low": 17,
+        "rainfall": 15,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool nights, warm days — ideal"
+      },
+      {
+        "month": 12,
+        "high": 30,
+        "low": 14,
+        "rainfall": 5,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Peak season — perfect balloon conditions"
+      }
+    ]
+  },
+  "Inle Lake": {
+    "country": "Myanmar",
+    "lat": 20.5,
+    "lng": 96.9,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 27,
+        "low": 8,
+        "rainfall": 5,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool mornings, warm days — best weather"
+      },
+      {
+        "month": 2,
+        "high": 30,
+        "low": 10,
+        "rainfall": 5,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Warm and dry, clear lake views"
+      },
+      {
+        "month": 3,
+        "high": 33,
+        "low": 13,
+        "rainfall": 10,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Getting hot, still pleasant"
+      },
+      {
+        "month": 4,
+        "high": 34,
+        "low": 16,
+        "rainfall": 30,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Hot days, some storms"
+      },
+      {
+        "month": 5,
+        "high": 30,
+        "low": 17,
+        "rainfall": 145,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Monsoon arrives — lake fills beautifully"
+      },
+      {
+        "month": 6,
+        "high": 28,
+        "low": 17,
+        "rainfall": 225,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Heavy rains, lake expands dramatically"
+      },
+      {
+        "month": 7,
+        "high": 27,
+        "low": 17,
+        "rainfall": 245,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet and lush, fewer tourists"
+      },
+      {
+        "month": 8,
+        "high": 27,
+        "low": 17,
+        "rainfall": 270,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Peak lake water levels"
+      },
+      {
+        "month": 9,
+        "high": 28,
+        "low": 16,
+        "rainfall": 200,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Still wet, stunning scenery"
+      },
+      {
+        "month": 10,
+        "high": 29,
+        "low": 14,
+        "rainfall": 90,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Drying out, lake still full"
+      },
+      {
+        "month": 11,
+        "high": 28,
+        "low": 11,
+        "rainfall": 25,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool and clear — ideal conditions"
+      },
+      {
+        "month": 12,
+        "high": 27,
+        "low": 8,
+        "rainfall": 10,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cold nights, beautiful mist on lake"
+      }
+    ]
+  },
+  "Galle": {
+    "country": "Sri Lanka",
+    "lat": 6.0535,
+    "lng": 80.221,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 30,
+        "low": 23,
+        "rainfall": 95,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Warm and sunny — peak season"
+      },
+      {
+        "month": 2,
+        "high": 31,
+        "low": 23,
+        "rainfall": 65,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Best month — clear and beautiful"
+      },
+      {
+        "month": 3,
+        "high": 32,
+        "low": 24,
+        "rainfall": 95,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Hot and sunny, calm seas"
+      },
+      {
+        "month": 4,
+        "high": 31,
+        "low": 25,
+        "rainfall": 205,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Getting wetter, still lovely"
+      },
+      {
+        "month": 5,
+        "high": 30,
+        "low": 25,
+        "rainfall": 430,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Southwest monsoon — heavy rains"
+      },
+      {
+        "month": 6,
+        "high": 29,
+        "low": 25,
+        "rainfall": 310,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Very wet, rough seas"
+      },
+      {
+        "month": 7,
+        "high": 29,
+        "low": 24,
+        "rainfall": 200,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Still wet but easing"
+      },
+      {
+        "month": 8,
+        "high": 29,
+        "low": 24,
+        "rainfall": 155,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet season tapering"
+      },
+      {
+        "month": 9,
+        "high": 30,
+        "low": 24,
+        "rainfall": 275,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Rains picking up again"
+      },
+      {
+        "month": 10,
+        "high": 30,
+        "low": 24,
+        "rainfall": 355,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Northeast monsoon, heavy rain"
+      },
+      {
+        "month": 11,
+        "high": 29,
+        "low": 24,
+        "rainfall": 240,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Still wet, easing"
+      },
+      {
+        "month": 12,
+        "high": 30,
+        "low": 23,
+        "rainfall": 170,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Drying out, season beginning"
+      }
+    ]
+  },
+  "Kandy": {
+    "country": "Sri Lanka",
+    "lat": 7.2906,
+    "lng": 80.6337,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 28,
+        "low": 17,
+        "rainfall": 95,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Warm days, cool nights — lovely"
+      },
+      {
+        "month": 2,
+        "high": 29,
+        "low": 18,
+        "rainfall": 65,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Dry and pleasant — best time"
+      },
+      {
+        "month": 3,
+        "high": 31,
+        "low": 20,
+        "rainfall": 105,
+        "season": "spring",
+        "rating": "good",
+        "desc": "Warm with some showers"
+      },
+      {
+        "month": 4,
+        "high": 31,
+        "low": 21,
+        "rainfall": 200,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Showers increasing"
+      },
+      {
+        "month": 5,
+        "high": 29,
+        "low": 21,
+        "rainfall": 250,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Southwest monsoon begins"
+      },
+      {
+        "month": 6,
+        "high": 28,
+        "low": 20,
+        "rainfall": 180,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Regular showers, lush greenery"
+      },
+      {
+        "month": 7,
+        "high": 28,
+        "low": 20,
+        "rainfall": 145,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Esala Perahera festival, some rain"
+      },
+      {
+        "month": 8,
+        "high": 28,
+        "low": 20,
+        "rainfall": 130,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet but manageable"
+      },
+      {
+        "month": 9,
+        "high": 28,
+        "low": 20,
+        "rainfall": 225,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Heavier showers"
+      },
+      {
+        "month": 10,
+        "high": 28,
+        "low": 20,
+        "rainfall": 355,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Northeast monsoon — very wet"
+      },
+      {
+        "month": 11,
+        "high": 27,
+        "low": 19,
+        "rainfall": 240,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet but beautiful hills"
+      },
+      {
+        "month": 12,
+        "high": 27,
+        "low": 18,
+        "rainfall": 170,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Drying out, pleasant"
+      }
+    ]
+  },
+  "Vientiane": {
+    "country": "Laos",
+    "lat": 17.9757,
+    "lng": 102.6331,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 28,
+        "low": 16,
+        "rainfall": 10,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool and dry — ideal conditions"
+      },
+      {
+        "month": 2,
+        "high": 31,
+        "low": 18,
+        "rainfall": 15,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Warm days, cool nights"
+      },
+      {
+        "month": 3,
+        "high": 34,
+        "low": 21,
+        "rainfall": 35,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Hot and dry"
+      },
+      {
+        "month": 4,
+        "high": 36,
+        "low": 24,
+        "rainfall": 90,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Very hot, Lao New Year (Pi Mai)"
+      },
+      {
+        "month": 5,
+        "high": 34,
+        "low": 25,
+        "rainfall": 225,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Monsoon begins"
+      },
+      {
+        "month": 6,
+        "high": 33,
+        "low": 25,
+        "rainfall": 265,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Regular monsoon rains"
+      },
+      {
+        "month": 7,
+        "high": 32,
+        "low": 25,
+        "rainfall": 280,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet season, Mekong rising"
+      },
+      {
+        "month": 8,
+        "high": 31,
+        "low": 25,
+        "rainfall": 330,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Wettest month"
+      },
+      {
+        "month": 9,
+        "high": 31,
+        "low": 24,
+        "rainfall": 290,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Heavy rains, flooding possible"
+      },
+      {
+        "month": 10,
+        "high": 31,
+        "low": 23,
+        "rainfall": 105,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Rains easing, water festival"
+      },
+      {
+        "month": 11,
+        "high": 30,
+        "low": 19,
+        "rainfall": 20,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Dry season returns, lovely weather"
+      },
+      {
+        "month": 12,
+        "high": 28,
+        "low": 16,
+        "rainfall": 10,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool and dry — perfect"
+      }
+    ]
+  },
+  "Vang Vieng": {
+    "country": "Laos",
+    "lat": 18.9225,
+    "lng": 102.4483,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 28,
+        "low": 12,
+        "rainfall": 8,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool and clear — stunning karst views"
+      },
+      {
+        "month": 2,
+        "high": 32,
+        "low": 14,
+        "rainfall": 10,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Warm days, cool nights, clear skies"
+      },
+      {
+        "month": 3,
+        "high": 36,
+        "low": 18,
+        "rainfall": 25,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Hot and dry"
+      },
+      {
+        "month": 4,
+        "high": 38,
+        "low": 22,
+        "rainfall": 65,
+        "season": "hot",
+        "rating": "good",
+        "desc": "Very hot, tubing in Nam Song"
+      },
+      {
+        "month": 5,
+        "high": 35,
+        "low": 23,
+        "rainfall": 205,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Monsoon begins, river rising"
+      },
+      {
+        "month": 6,
+        "high": 32,
+        "low": 23,
+        "rainfall": 250,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet season, lush green scenery"
+      },
+      {
+        "month": 7,
+        "high": 30,
+        "low": 23,
+        "rainfall": 290,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet, misty karst — beautiful"
+      },
+      {
+        "month": 8,
+        "high": 30,
+        "low": 23,
+        "rainfall": 340,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Wettest month, river high"
+      },
+      {
+        "month": 9,
+        "high": 30,
+        "low": 22,
+        "rainfall": 275,
+        "season": "wet",
+        "rating": "poor",
+        "desc": "Heavy rains, some flooding"
+      },
+      {
+        "month": 10,
+        "high": 30,
+        "low": 20,
+        "rainfall": 100,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Rains easing, stunning landscapes"
+      },
+      {
+        "month": 11,
+        "high": 30,
+        "low": 15,
+        "rainfall": 20,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Dry season — ideal for outdoor adventures"
+      },
+      {
+        "month": 12,
+        "high": 28,
+        "low": 12,
+        "rainfall": 8,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Cool and dry, clear mountain views"
+      }
+    ]
+  },
+  "Beijing": {
+    "country": "China",
+    "lat": 39.9042,
+    "lng": 116.4074,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 2,
+        "low": -8,
+        "rainfall": 3,
+        "season": "winter",
+        "rating": "fair",
+        "desc": "Very cold and dry, clear skies for Great Wall"
+      },
+      {
+        "month": 2,
+        "high": 5,
+        "low": -5,
+        "rainfall": 7,
+        "season": "winter",
+        "rating": "fair",
+        "desc": "Cold, occasionally snowy"
+      },
+      {
+        "month": 3,
+        "high": 12,
+        "low": 1,
+        "rainfall": 10,
+        "season": "spring",
+        "rating": "good",
+        "desc": "Warming up, cherry blossoms in parks"
+      },
+      {
+        "month": 4,
+        "high": 20,
+        "low": 8,
+        "rainfall": 25,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Beautiful spring weather"
+      },
+      {
+        "month": 5,
+        "high": 27,
+        "low": 15,
+        "rainfall": 35,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Warm and pleasant — ideal"
+      },
+      {
+        "month": 6,
+        "high": 32,
+        "low": 20,
+        "rainfall": 75,
+        "season": "summer",
+        "rating": "good",
+        "desc": "Hot, occasional storms"
+      },
+      {
+        "month": 7,
+        "high": 31,
+        "low": 23,
+        "rainfall": 160,
+        "season": "summer",
+        "rating": "fair",
+        "desc": "Hottest and wettest — rainy season"
+      },
+      {
+        "month": 8,
+        "high": 29,
+        "low": 21,
+        "rainfall": 140,
+        "season": "summer",
+        "rating": "fair",
+        "desc": "Hot with heavy summer storms"
+      },
+      {
+        "month": 9,
+        "high": 25,
+        "low": 15,
+        "rainfall": 45,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Best season — clear skies and autumn colors"
+      },
+      {
+        "month": 10,
+        "high": 18,
+        "low": 7,
+        "rainfall": 20,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Perfect fall — foliage at the Great Wall"
+      },
+      {
+        "month": 11,
+        "high": 9,
+        "low": 0,
+        "rainfall": 8,
+        "season": "autumn",
+        "rating": "good",
+        "desc": "Getting cold, fewer crowds"
+      },
+      {
+        "month": 12,
+        "high": 3,
+        "low": -6,
+        "rainfall": 3,
+        "season": "winter",
+        "rating": "fair",
+        "desc": "Cold and dry, winter ambiance"
+      }
+    ]
+  },
+  "Shanghai": {
+    "country": "China",
+    "lat": 31.2304,
+    "lng": 121.4737,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 8,
+        "low": 1,
+        "rainfall": 60,
+        "season": "winter",
+        "rating": "fair",
+        "desc": "Cold and grey, sometimes snowy"
+      },
+      {
+        "month": 2,
+        "high": 9,
+        "low": 2,
+        "rainfall": 65,
+        "season": "winter",
+        "rating": "fair",
+        "desc": "Cold and drizzly"
+      },
+      {
+        "month": 3,
+        "high": 14,
+        "low": 7,
+        "rainfall": 95,
+        "season": "spring",
+        "rating": "good",
+        "desc": "Warming up, cherry blossoms"
+      },
+      {
+        "month": 4,
+        "high": 20,
+        "low": 13,
+        "rainfall": 105,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Beautiful spring weather"
+      },
+      {
+        "month": 5,
+        "high": 26,
+        "low": 18,
+        "rainfall": 105,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Warm and lovely"
+      },
+      {
+        "month": 6,
+        "high": 29,
+        "low": 22,
+        "rainfall": 165,
+        "season": "plum rains",
+        "rating": "fair",
+        "desc": "Plum rain season — humid and wet"
+      },
+      {
+        "month": 7,
+        "high": 33,
+        "low": 26,
+        "rainfall": 135,
+        "season": "summer",
+        "rating": "fair",
+        "desc": "Very hot and humid"
+      },
+      {
+        "month": 8,
+        "high": 33,
+        "low": 26,
+        "rainfall": 135,
+        "season": "summer",
+        "rating": "fair",
+        "desc": "Hottest month, typhoon risk"
+      },
+      {
+        "month": 9,
+        "high": 28,
+        "low": 21,
+        "rainfall": 130,
+        "season": "autumn",
+        "rating": "good",
+        "desc": "Cooling down, typhoon risk"
+      },
+      {
+        "month": 10,
+        "high": 22,
+        "low": 14,
+        "rainfall": 60,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Lovely autumn — best season"
+      },
+      {
+        "month": 11,
+        "high": 15,
+        "low": 7,
+        "rainfall": 55,
+        "season": "autumn",
+        "rating": "good",
+        "desc": "Cool and pleasant"
+      },
+      {
+        "month": 12,
+        "high": 9,
+        "low": 2,
+        "rainfall": 45,
+        "season": "winter",
+        "rating": "fair",
+        "desc": "Cold and grey"
+      }
+    ]
+  },
+  "Chengdu": {
+    "country": "China",
+    "lat": 30.5728,
+    "lng": 104.0668,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 9,
+        "low": 3,
+        "rainfall": 15,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Mild winter, great time for hotpot and pandas"
+      },
+      {
+        "month": 2,
+        "high": 11,
+        "low": 4,
+        "rainfall": 20,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cool, panda research base less crowded"
+      },
+      {
+        "month": 3,
+        "high": 16,
+        "low": 9,
+        "rainfall": 35,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Spring blooms, pleasant temperatures"
+      },
+      {
+        "month": 4,
+        "high": 22,
+        "low": 14,
+        "rainfall": 70,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Warm and beautiful, panda cubs often born"
+      },
+      {
+        "month": 5,
+        "high": 26,
+        "low": 19,
+        "rainfall": 95,
+        "season": "spring",
+        "rating": "good",
+        "desc": "Warm and green"
+      },
+      {
+        "month": 6,
+        "high": 29,
+        "low": 22,
+        "rainfall": 140,
+        "season": "summer",
+        "rating": "fair",
+        "desc": "Hot and rainy"
+      },
+      {
+        "month": 7,
+        "high": 30,
+        "low": 23,
+        "rainfall": 220,
+        "season": "summer",
+        "rating": "fair",
+        "desc": "Hottest and wettest — steamy"
+      },
+      {
+        "month": 8,
+        "high": 29,
+        "low": 23,
+        "rainfall": 195,
+        "season": "summer",
+        "rating": "fair",
+        "desc": "Hot and humid, rainy"
+      },
+      {
+        "month": 9,
+        "high": 24,
+        "low": 18,
+        "rainfall": 145,
+        "season": "autumn",
+        "rating": "good",
+        "desc": "Cooling down, fog and mist"
+      },
+      {
+        "month": 10,
+        "high": 19,
+        "low": 13,
+        "rainfall": 65,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Beautiful autumn weather"
+      },
+      {
+        "month": 11,
+        "high": 14,
+        "low": 8,
+        "rainfall": 30,
+        "season": "autumn",
+        "rating": "good",
+        "desc": "Cool and peaceful"
+      },
+      {
+        "month": 12,
+        "high": 10,
+        "low": 3,
+        "rainfall": 10,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cool winter, giant panda season"
+      }
+    ]
+  },
+  "Male": {
+    "country": "Maldives",
+    "lat": 4.1755,
+    "lng": 73.5093,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 30,
+        "low": 26,
+        "rainfall": 80,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Dry season — stunning visibility for diving"
+      },
+      {
+        "month": 2,
+        "high": 31,
+        "low": 26,
+        "rainfall": 45,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Driest month — perfect conditions"
+      },
+      {
+        "month": 3,
+        "high": 31,
+        "low": 27,
+        "rainfall": 70,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Hot and sunny, calm clear seas"
+      },
+      {
+        "month": 4,
+        "high": 31,
+        "low": 27,
+        "rainfall": 120,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Getting wetter, still beautiful"
+      },
+      {
+        "month": 5,
+        "high": 30,
+        "low": 27,
+        "rainfall": 220,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Southwest monsoon begins"
+      },
+      {
+        "month": 6,
+        "high": 30,
+        "low": 27,
+        "rainfall": 285,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet season — rough seas possible"
+      },
+      {
+        "month": 7,
+        "high": 30,
+        "low": 27,
+        "rainfall": 290,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet and windy, good for surfing"
+      },
+      {
+        "month": 8,
+        "high": 30,
+        "low": 27,
+        "rainfall": 245,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet but warm"
+      },
+      {
+        "month": 9,
+        "high": 30,
+        "low": 27,
+        "rainfall": 220,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Rains tapering"
+      },
+      {
+        "month": 10,
+        "high": 30,
+        "low": 27,
+        "rainfall": 195,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Transitioning to dry, good value"
+      },
+      {
+        "month": 11,
+        "high": 30,
+        "low": 27,
+        "rainfall": 160,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Getting drier, season beginning"
+      },
+      {
+        "month": 12,
+        "high": 30,
+        "low": 26,
+        "rainfall": 130,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Dry season returning — peak season"
+      }
+    ]
+  },
+  "Maafushi": {
+    "country": "Maldives",
+    "lat": 3.9402,
+    "lng": 73.4921,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 30,
+        "low": 26,
+        "rainfall": 80,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Budget island paradise — perfect weather"
+      },
+      {
+        "month": 2,
+        "high": 31,
+        "low": 26,
+        "rainfall": 45,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Best month — snorkelling is incredible"
+      },
+      {
+        "month": 3,
+        "high": 31,
+        "low": 27,
+        "rainfall": 70,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Hot, sunny and calm"
+      },
+      {
+        "month": 4,
+        "high": 31,
+        "low": 27,
+        "rainfall": 120,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Good conditions, getting wetter"
+      },
+      {
+        "month": 5,
+        "high": 30,
+        "low": 27,
+        "rainfall": 220,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Monsoon arrives, choppier seas"
+      },
+      {
+        "month": 6,
+        "high": 30,
+        "low": 27,
+        "rainfall": 285,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet season, budget prices"
+      },
+      {
+        "month": 7,
+        "high": 30,
+        "low": 27,
+        "rainfall": 290,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet and windy"
+      },
+      {
+        "month": 8,
+        "high": 30,
+        "low": 27,
+        "rainfall": 245,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Wet season, fewer crowds"
+      },
+      {
+        "month": 9,
+        "high": 30,
+        "low": 27,
+        "rainfall": 220,
+        "season": "wet",
+        "rating": "fair",
+        "desc": "Easing rains"
+      },
+      {
+        "month": 10,
+        "high": 30,
+        "low": 27,
+        "rainfall": 195,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Good transition period, deals available"
+      },
+      {
+        "month": 11,
+        "high": 30,
+        "low": 27,
+        "rainfall": 160,
+        "season": "shoulder",
+        "rating": "good",
+        "desc": "Season picking up"
+      },
+      {
+        "month": 12,
+        "high": 30,
+        "low": 26,
+        "rainfall": 130,
+        "season": "dry",
+        "rating": "excellent",
+        "desc": "Peak season, busier but beautiful"
+      }
+    ]
+  },
+  "Thimphu": {
+    "country": "Bhutan",
+    "lat": 27.4728,
+    "lng": 89.639,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 9,
+        "low": -3,
+        "rainfall": 10,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cold and clear — stunning Himalayan views"
+      },
+      {
+        "month": 2,
+        "high": 11,
+        "low": -1,
+        "rainfall": 25,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cold, occasional snow, festivals"
+      },
+      {
+        "month": 3,
+        "high": 15,
+        "low": 4,
+        "rainfall": 35,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Rhododendrons blooming, great trekking"
+      },
+      {
+        "month": 4,
+        "high": 18,
+        "low": 7,
+        "rainfall": 65,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Perfect spring weather, festivals"
+      },
+      {
+        "month": 5,
+        "high": 22,
+        "low": 11,
+        "rainfall": 85,
+        "season": "spring",
+        "rating": "good",
+        "desc": "Warm and pleasant, flowers everywhere"
+      },
+      {
+        "month": 6,
+        "high": 23,
+        "low": 14,
+        "rainfall": 200,
+        "season": "monsoon",
+        "rating": "fair",
+        "desc": "Monsoon begins, green and lush"
+      },
+      {
+        "month": 7,
+        "high": 23,
+        "low": 15,
+        "rainfall": 290,
+        "season": "monsoon",
+        "rating": "poor",
+        "desc": "Heaviest rains — trekking difficult"
+      },
+      {
+        "month": 8,
+        "high": 23,
+        "low": 14,
+        "rainfall": 265,
+        "season": "monsoon",
+        "rating": "poor",
+        "desc": "Wet and cloudy"
+      },
+      {
+        "month": 9,
+        "high": 21,
+        "low": 12,
+        "rainfall": 145,
+        "season": "monsoon",
+        "rating": "fair",
+        "desc": "Rains easing, autumn approaching"
+      },
+      {
+        "month": 10,
+        "high": 18,
+        "low": 7,
+        "rainfall": 35,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Best season — clear skies and autumn colors"
+      },
+      {
+        "month": 11,
+        "high": 13,
+        "low": 2,
+        "rainfall": 10,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Clear and crisp, mountain views perfect"
+      },
+      {
+        "month": 12,
+        "high": 9,
+        "low": -2,
+        "rainfall": 8,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cold winter, peaceful and uncrowded"
+      }
+    ]
+  },
+  "Paro": {
+    "country": "Bhutan",
+    "lat": 27.4287,
+    "lng": 89.4128,
+    "monthly": [
+      {
+        "month": 1,
+        "high": 8,
+        "low": -5,
+        "rainfall": 15,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cold, clear and uncrowded — Tiger's Nest views"
+      },
+      {
+        "month": 2,
+        "high": 10,
+        "low": -2,
+        "rainfall": 30,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cold with some snow, beautiful"
+      },
+      {
+        "month": 3,
+        "high": 14,
+        "low": 3,
+        "rainfall": 45,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Spring blooms, perfect Tiger's Nest hike"
+      },
+      {
+        "month": 4,
+        "high": 18,
+        "low": 7,
+        "rainfall": 80,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Ideal — rhododendrons everywhere"
+      },
+      {
+        "month": 5,
+        "high": 22,
+        "low": 11,
+        "rainfall": 95,
+        "season": "spring",
+        "rating": "good",
+        "desc": "Warm and green, some afternoon showers"
+      },
+      {
+        "month": 6,
+        "high": 24,
+        "low": 14,
+        "rainfall": 225,
+        "season": "monsoon",
+        "rating": "fair",
+        "desc": "Monsoon season, airport closures possible"
+      },
+      {
+        "month": 7,
+        "high": 24,
+        "low": 15,
+        "rainfall": 330,
+        "season": "monsoon",
+        "rating": "poor",
+        "desc": "Very wet, hiking conditions poor"
+      },
+      {
+        "month": 8,
+        "high": 24,
+        "low": 15,
+        "rainfall": 300,
+        "season": "monsoon",
+        "rating": "poor",
+        "desc": "Heavy rains, misty valleys"
+      },
+      {
+        "month": 9,
+        "high": 22,
+        "low": 13,
+        "rainfall": 175,
+        "season": "monsoon",
+        "rating": "fair",
+        "desc": "Rains easing, lush landscapes"
+      },
+      {
+        "month": 10,
+        "high": 19,
+        "low": 7,
+        "rainfall": 45,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Best time — crystal clear, Thimphu Tsechu"
+      },
+      {
+        "month": 11,
+        "high": 13,
+        "low": 2,
+        "rainfall": 15,
+        "season": "autumn",
+        "rating": "excellent",
+        "desc": "Clear and cold, spectacular views"
+      },
+      {
+        "month": 12,
+        "high": 9,
+        "low": -4,
+        "rainfall": 15,
+        "season": "winter",
+        "rating": "good",
+        "desc": "Cold winter, peaceful valley"
+      }
+    ]
+  },
+  "Ulaanbaatar": {
+    "country": "Mongolia",
+    "lat": 47.8864,
+    "lng": 106.9057,
+    "monthly": [
+      {
+        "month": 1,
+        "high": -13,
+        "low": -28,
+        "rainfall": 2,
+        "season": "winter",
+        "rating": "fair",
+        "desc": "Extremely cold, coldest capital on Earth"
+      },
+      {
+        "month": 2,
+        "high": -8,
+        "low": -24,
+        "rainfall": 3,
+        "season": "winter",
+        "rating": "fair",
+        "desc": "Very cold, Tsagaan Sar (Lunar New Year)"
+      },
+      {
+        "month": 3,
+        "high": 0,
+        "low": -14,
+        "rainfall": 4,
+        "season": "winter",
+        "rating": "fair",
+        "desc": "Cold but warming, traditional festivals"
+      },
+      {
+        "month": 4,
+        "high": 10,
+        "low": -4,
+        "rainfall": 8,
+        "season": "spring",
+        "rating": "good",
+        "desc": "Warming up, spring winds"
+      },
+      {
+        "month": 5,
+        "high": 17,
+        "low": 3,
+        "rainfall": 15,
+        "season": "spring",
+        "rating": "excellent",
+        "desc": "Green steppes, great for horse riding"
+      },
+      {
+        "month": 6,
+        "high": 22,
+        "low": 8,
+        "rainfall": 45,
+        "season": "summer",
+        "rating": "excellent",
+        "desc": "Warm and green — Naadam festival"
+      },
+      {
+        "month": 7,
+        "high": 24,
+        "low": 12,
+        "rainfall": 65,
+        "season": "summer",
+        "rating": "excellent",
+        "desc": "Peak summer — Naadam festival, nomad culture"
+      },
+      {
+        "month": 8,
+        "high": 22,
+        "low": 10,
+        "rainfall": 55,
+        "season": "summer",
+        "rating": "excellent",
+        "desc": "Beautiful steppes, nomad camps"
+      },
+      {
+        "month": 9,
+        "high": 14,
+        "low": 3,
+        "rainfall": 25,
+        "season": "autumn",
+        "rating": "good",
+        "desc": "Cooling down, golden steppes"
+      },
+      {
+        "month": 10,
+        "high": 4,
+        "low": -7,
+        "rainfall": 8,
+        "season": "autumn",
+        "rating": "fair",
+        "desc": "Getting cold, autumn colors"
+      },
+      {
+        "month": 11,
+        "high": -5,
+        "low": -18,
+        "rainfall": 4,
+        "season": "winter",
+        "rating": "fair",
+        "desc": "Very cold, winter setting in"
+      },
+      {
+        "month": 12,
+        "high": -12,
+        "low": -26,
+        "rainfall": 2,
+        "season": "winter",
+        "rating": "fair",
+        "desc": "Extreme cold, not for the faint-hearted"
+      }
+    ]
+  }
+}
