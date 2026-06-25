@@ -6,41 +6,86 @@
   <title>Prague — Places I've Been</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <style>
+    :root {
+      --panel: rgba(255,250,243,.78);
+      --panel-solid: #fffaf3;
+      --text: #4a3c28;
+      --muted: #8a7a63;
+      --accent: #d97706;
+      --chip: #f1e3cc;
+      --chip-text: #5b4a2e;
+      --font: -apple-system, system-ui, "Segoe UI", sans-serif;
+      --head-font: -apple-system, system-ui, sans-serif;
+      --page-bg: #fbf6ee;
+    }
     * { box-sizing: border-box; }
-    html, body { margin: 0; height: 100%; font-family: -apple-system, system-ui, sans-serif; }
-    body { background: #fbf6ee; }
-    #map { position: absolute; inset: 0; background: #fbf6ee; }
+    html, body { margin: 0; height: 100%; font-family: var(--font); }
+    body { background: var(--page-bg); }
+    #map { position: absolute; inset: 0; background: var(--page-bg); }
 
+    /* Top bar */
     .bar {
-      position: absolute; top: 0; left: 0; right: 0; z-index: 1000;
-      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
-      padding: 10px 12px; backdrop-filter: blur(8px);
-      background: rgba(255,250,240,.82); color: #5b4a2e;
+      position: absolute; top: 12px; left: 12px; right: 12px; z-index: 1000;
+      display: flex; align-items: center; gap: 10px;
+      padding: 10px 12px; border-radius: 16px;
+      background: var(--panel); color: var(--text);
+      backdrop-filter: blur(14px) saturate(1.2); -webkit-backdrop-filter: blur(14px) saturate(1.2);
+      box-shadow: 0 6px 24px rgba(40,28,10,.12); border: 1px solid rgba(255,255,255,.4);
     }
-    .bar h1 { font-size: 15px; margin: 0; flex: 1 1 100%; font-weight: 600; }
-    .modes { display: flex; gap: 6px; }
-    .modes button {
-      border: 0; border-radius: 20px; padding: 7px 13px; font-size: 13px;
-      font-weight: 600; cursor: pointer; background: #f1e3cc; color: #5b4a2e;
-      opacity: .6; transition: opacity .15s;
-    }
-    .modes button.active { opacity: 1; box-shadow: inset 0 0 0 2px #e58e26; }
-    .bar .status { font-size: 11px; opacity: .7; margin-left: auto; }
+    .bar h1 { font-size: 14px; margin: 0; flex: 1; font-weight: 700; letter-spacing: .2px; font-family: var(--head-font); }
 
+    /* Segmented mode control */
+    .seg { display: flex; background: rgba(0,0,0,.06); border-radius: 11px; padding: 3px; }
+    .seg button {
+      border: 0; background: transparent; color: var(--muted);
+      font-size: 12px; font-weight: 600; padding: 6px 11px; border-radius: 9px;
+      cursor: pointer; font-family: var(--font); transition: all .15s;
+    }
+    .seg button.active { background: var(--panel-solid); color: var(--accent); box-shadow: 0 1px 4px rgba(0,0,0,.12); }
+
+    /* Skin switcher */
+    .skins {
+      position: absolute; left: 12px; bottom: 16px; z-index: 1000;
+      display: flex; flex-direction: column; gap: 9px; align-items: center;
+      padding: 10px 8px; border-radius: 18px;
+      background: var(--panel); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 6px 24px rgba(40,28,10,.12); border: 1px solid rgba(255,255,255,.4);
+    }
+    .swatch {
+      width: 26px; height: 26px; border-radius: 50%; cursor: pointer;
+      border: 2px solid rgba(255,255,255,.85); box-shadow: 0 1px 5px rgba(0,0,0,.25);
+      transition: transform .15s;
+    }
+    .swatch.active { transform: scale(1.18); outline: 2px solid var(--accent); outline-offset: 2px; }
+    .skins .label { font-size: 9px; font-weight: 700; letter-spacing: .6px; text-transform: uppercase; color: var(--muted); }
+
+    /* Banner */
     .banner {
-      position: absolute; bottom: 14px; left: 12px; right: 12px; z-index: 1000;
-      font-size: 12px; line-height: 1.4; padding: 10px 12px; border-radius: 10px;
-      backdrop-filter: blur(8px); background: rgba(255,250,240,.85); color: #5b4a2e;
+      position: absolute; bottom: 16px; left: 70px; right: 12px; z-index: 1000;
+      font-size: 12px; line-height: 1.45; padding: 11px 13px; border-radius: 14px;
+      background: var(--panel); color: var(--text);
+      backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 6px 24px rgba(40,28,10,.12); border: 1px solid rgba(255,255,255,.4);
     }
+    .status { position: absolute; top: 70px; right: 14px; z-index: 1000; font-size: 11px; color: var(--muted); }
 
-    .leaflet-popup-content { margin: 12px 14px; }
-    .pname { font-weight: 700; font-size: 15px; }
-    .ptype { display: inline-block; font-size: 11px; text-transform: uppercase;
-      letter-spacing: .5px; padding: 2px 8px; border-radius: 12px; margin: 6px 0;
-      background: #f1e3cc; color: #5b4a2e; }
-    .pnote { font-size: 13px; color: #444; margin-top: 4px; }
-    .ptime { font-size: 12px; color: #777; margin-top: 4px; }
-    .ppeople { font-size: 12px; color: #666; margin-top: 6px; }
+    /* Pin marker */
+    .pin { position: relative; }
+    .pin .dot {
+      width: 14px; height: 14px; border-radius: 50%;
+      border: 2.5px solid #fff; box-shadow: 0 1px 5px rgba(0,0,0,.4);
+    }
+    .pin.named .dot { width: 16px; height: 16px; box-shadow: 0 0 0 4px rgba(217,119,6,.18), 0 1px 5px rgba(0,0,0,.4); }
+
+    /* Popup */
+    .leaflet-popup-content-wrapper { border-radius: 14px; box-shadow: 0 8px 30px rgba(30,20,5,.22); }
+    .leaflet-popup-content { margin: 13px 15px; font-family: var(--font); }
+    .pname { font-weight: 700; font-size: 15px; color: #2a2113; font-family: var(--head-font); }
+    .ptype { display: inline-block; font-size: 10.5px; text-transform: uppercase; letter-spacing: .6px;
+      padding: 2px 9px; border-radius: 12px; margin: 7px 0; background: var(--chip); color: var(--chip-text); }
+    .pnote { font-size: 13px; color: #514538; margin-top: 4px; }
+    .ptime { font-size: 12px; color: #877; margin-top: 4px; }
+    .ppeople { font-size: 12px; color: #877; margin-top: 6px; }
     .pflag { font-size: 11px; color: #b45309; margin-top: 6px; font-weight: 600; }
   </style>
 </head>
@@ -48,23 +93,21 @@
   <div id="map"></div>
 
   <div class="bar">
-    <h1>🗺️ Prague — places I've been</h1>
-    <div class="modes">
+    <h1>🗺️ Prague · places I've been</h1>
+    <div class="seg" id="modes">
       <button data-mode="places">Places</button>
       <button data-mode="predicted">Predicted</button>
       <button data-mode="real" class="active">Real</button>
     </div>
-    <span class="status" id="status"></span>
   </div>
 
+  <div class="skins" id="skins"><span class="label">Style</span></div>
+  <div class="status" id="status"></div>
   <div class="banner" id="banner"></div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>
     // ---- DATA -------------------------------------------------------------
-    // src: 'named'  -> you told me the place by name (authoritative).
-    //      'life360'-> real address from a Life360 screenshot (geocoded, good).
-    //      'guess'  -> best estimate, still to be confirmed.
     const PLACES = {
       hostel:    { name: "Clown and Bard Hostel", type: "hostel",   note: "Home base — Bořivojova 758/102, Žižkov.",  time: "your stay", lat: 50.08165, lng: 14.45000, people: ["Me"], src: "named" },
       stepanska: { name: "Štěpánská 611/14",       type: "night out",note: "Long night here, ~5 hrs. Name it?",        time: "Tue 20:42 – 01:35", lat: 50.07990, lng: 14.42600, people: ["Me"], src: "life360" },
@@ -81,11 +124,10 @@
       olivers:   { name: "Oliver's Café",          type: "café",     note: "You named this one.",                      time: "", lat: 50.08050, lng: 14.44520, people: ["Me"], src: "named", approx: true },
     };
 
-    // PREDICTED: estimated most-probable roads between places, hostel outward.
+    // PREDICTED: estimated links between places (drawn as straight dashed connectors).
     const ROUTE = ["hostel", "rajske", "kubelik", "stitneho", "krasova", "pavlac", "twist", "sladkov", "seifert", "stepanska", "newhall"];
 
-    // REAL: actual Life360-logged trips. mode 'walk' = roads you were on,
-    // 'taxi' = a vehicle hop (drawn dashed — roads travelled, not walked).
+    // REAL: actual Life360-logged trips, snapped to real streets.
     const REAL_TRIPS = [
       { from: "krasova", to: "sladkov", mode: "walk", label: "Thu walk past Café Pavlač" },
       { from: "hostel", to: "rajske", mode: "walk", label: "Tue ~12:41 walk to U Rajské zahrady" },
@@ -93,34 +135,83 @@
       { from: "newhall", to: "hostel", mode: "taxi", label: "Tue 02:04 taxi home" },
     ];
 
-    // ---- THEME (amber) ----------------------------------------------------
-    const TILES = "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png";
-    const ROAD_GLOW = "#fcd9a0", ROAD_CORE = "#e58e26", PIN_FILL = "#d97706";
+    // ---- SKINS (premium options) -----------------------------------------
+    const VOYAGER  = "https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png";
+    const VOYAGERL = "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png";
+    const POSITRON = "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png";
+    const DARK     = "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png";
+
+    const SKINS = {
+      amber: {
+        label: "Amber", swatch: "#e58e26", tiles: VOYAGERL,
+        road: "#e58e26", roadGlow: "#fbd9a3", pin: "#d97706", accent: "#d97706",
+        vars: { "--page-bg": "#fbf6ee", "--panel": "rgba(255,250,243,.78)", "--panel-solid": "#fffaf3",
+                "--text": "#4a3c28", "--muted": "#8a7a63", "--accent": "#d97706",
+                "--chip": "#f1e3cc", "--chip-text": "#5b4a2e", "--head-font": "-apple-system, system-ui, sans-serif" },
+      },
+      linen: {
+        label: "Linen", swatch: "#c2410c", tiles: POSITRON,
+        road: "#c2410c", roadGlow: "#f3cba9", pin: "#9a3412", accent: "#b04318",
+        vars: { "--page-bg": "#f7f2ea", "--panel": "rgba(250,246,239,.82)", "--panel-solid": "#fdfaf5",
+                "--text": "#3f3327", "--muted": "#8c7a64", "--accent": "#b04318",
+                "--chip": "#ecdfce", "--chip-text": "#5a4632", "--head-font": "Georgia, 'Times New Roman', serif" },
+      },
+      graphite: {
+        label: "Graphite", swatch: "#52525b", tiles: POSITRON,
+        road: "#3f3f46", roadGlow: "#d4d4d8", pin: "#18181b", accent: "#ea9a1f",
+        vars: { "--page-bg": "#f4f4f5", "--panel": "rgba(255,255,255,.82)", "--panel-solid": "#ffffff",
+                "--text": "#27272a", "--muted": "#71717a", "--accent": "#ea9a1f",
+                "--chip": "#e4e4e7", "--chip-text": "#3f3f46", "--head-font": "-apple-system, system-ui, sans-serif" },
+      },
+      midnight: {
+        label: "Midnight", swatch: "#f0b429", tiles: DARK,
+        road: "#f0b429", roadGlow: "#7a5a12", pin: "#fbbf24", accent: "#f0b429",
+        vars: { "--page-bg": "#0e0e12", "--panel": "rgba(28,28,34,.7)", "--panel-solid": "#1c1c22",
+                "--text": "#ece6d8", "--muted": "#9a927f", "--accent": "#f0b429",
+                "--chip": "#33312a", "--chip-text": "#f0e6d0", "--head-font": "-apple-system, system-ui, sans-serif" },
+      },
+    };
+
+    let ROAD = SKINS.amber.road, ROAD_GLOW = SKINS.amber.roadGlow, PIN = SKINS.amber.pin;
+    let currentSkin = "amber", currentMode = "real", tileLayer = null;
+    const realCache = []; // { geom|null, mode, a, b }
 
     // ---- MAP --------------------------------------------------------------
     const map = L.map("map", { zoomControl: false }).setView([50.0825, 14.4470], 14);
     L.control.zoom({ position: "bottomright" }).addTo(map);
-    L.tileLayer(TILES, { attribution: "&copy; OpenStreetMap, &copy; CARTO", maxZoom: 20 }).addTo(map);
-
     const predictedLayer = L.layerGroup();
-    const realLayer      = L.layerGroup();
-    const pinLayer       = L.layerGroup().addTo(map);
+    const realLayer = L.layerGroup();
+    const pinLayer = L.layerGroup().addTo(map);
 
-    function drawRoad(layer, geometry, { dashed = false } = {}) {
-      L.geoJSON(geometry, { style: { color: ROAD_GLOW, weight: 11, opacity: .9, lineCap: "round", lineJoin: "round" } }).addTo(layer);
-      L.geoJSON(geometry, { style: { color: ROAD_CORE, weight: 5, opacity: 1, lineCap: "round", lineJoin: "round", dashArray: dashed ? "1 10" : null } }).addTo(layer);
+    // ---- road drawing -----------------------------------------------------
+    function drawRoadGeom(layer, geom, dashed) {
+      L.geoJSON(geom, { style: { color: ROAD_GLOW, weight: 10, opacity: .85, lineCap: "round", lineJoin: "round" } }).addTo(layer);
+      L.geoJSON(geom, { style: { color: ROAD, weight: 4.5, opacity: 1, lineCap: "round", lineJoin: "round", dashArray: dashed ? "1 9" : null } }).addTo(layer);
     }
-    function drawStraight(layer, latlngs, { dashed = false } = {}) {
-      L.polyline(latlngs, { color: ROAD_CORE, weight: 3, opacity: .5, dashArray: dashed ? "4 8" : null }).addTo(layer);
+    function drawStraight(layer, a, b) {
+      const pts = [[a.lat, a.lng], [b.lat, b.lng]];
+      L.polyline(pts, { color: ROAD_GLOW, weight: 6, opacity: .35, lineCap: "round" }).addTo(layer);
+      L.polyline(pts, { color: ROAD, weight: 2.5, opacity: .9, lineCap: "round", dashArray: "2 8" }).addTo(layer);
     }
 
-    // ---- OSRM road snapping ----------------------------------------------
-    async function fetchRoute(a, b, preferred) {
-      const profiles = preferred === "taxi" ? ["driving", "foot"] : ["foot", "driving"];
+    function renderPredicted() {
+      predictedLayer.clearLayers();
+      for (let i = 0; i < ROUTE.length - 1; i++) drawStraight(predictedLayer, PLACES[ROUTE[i]], PLACES[ROUTE[i + 1]]);
+    }
+    function renderReal() {
+      realLayer.clearLayers();
+      realCache.forEach(t => {
+        if (t.geom) drawRoadGeom(realLayer, t.geom, t.mode === "taxi");
+        else drawStraight(realLayer, t.a, t.b);
+      });
+    }
+
+    // ---- OSRM (real trips only, fetched once and cached) ------------------
+    async function fetchRoute(a, b, mode) {
+      const profiles = mode === "taxi" ? ["driving", "foot"] : ["foot", "driving"];
       for (const profile of profiles) {
         try {
-          const url = `https://router.project-osrm.org/route/v1/${profile}/` +
-            `${a.lng},${a.lat};${b.lng},${b.lat}?overview=full&geometries=geojson`;
+          const url = `https://router.project-osrm.org/route/v1/${profile}/${a.lng},${a.lat};${b.lng},${b.lat}?overview=full&geometries=geojson`;
           const res = await fetch(url);
           if (!res.ok) continue;
           const j = await res.json();
@@ -129,29 +220,27 @@
       }
       return null;
     }
-
-    async function buildPredicted() {
-      for (let i = 0; i < ROUTE.length - 1; i++) {
-        const a = PLACES[ROUTE[i]], b = PLACES[ROUTE[i + 1]];
-        const geom = await fetchRoute(a, b);
-        if (geom) drawRoad(predictedLayer, geom, { dashed: true });
-        else drawStraight(predictedLayer, [[a.lat, a.lng], [b.lat, b.lng]], { dashed: true });
-      }
-    }
-    async function buildReal() {
+    async function buildRealCache() {
+      document.getElementById("status").textContent = "tracing roads…";
       for (const trip of REAL_TRIPS) {
         const a = PLACES[trip.from], b = PLACES[trip.to];
         const geom = await fetchRoute(a, b, trip.mode);
-        if (geom) drawRoad(realLayer, geom, { dashed: trip.mode === "taxi" });
-        else drawStraight(realLayer, [[a.lat, a.lng], [b.lat, b.lng]], { dashed: trip.mode === "taxi" });
+        realCache.push({ geom, mode: trip.mode, a, b });
       }
+      document.getElementById("status").textContent = "";
+      renderReal();
     }
 
     // ---- NODES ------------------------------------------------------------
-    function drawPins() {
+    function makeIcon(p) {
+      const cls = p.src === "named" ? "pin named" : "pin";
+      return L.divIcon({ className: "", html: `<div class="${cls}"><div class="dot" style="background:${PIN}"></div></div>`,
+        iconSize: [16, 16], iconAnchor: [8, 8], popupAnchor: [0, -10] });
+    }
+    function renderPins() {
+      pinLayer.clearLayers();
       Object.values(PLACES).forEach(p => {
-        const dot = L.circleMarker([p.lat, p.lng], { radius: 6, color: "#fff", weight: 2, fillColor: PIN_FILL, fillOpacity: 1 }).addTo(pinLayer);
-        dot.bindPopup(`
+        L.marker([p.lat, p.lng], { icon: makeIcon(p) }).addTo(pinLayer).bindPopup(`
           <div class="pname">${p.name}</div>
           <span class="ptype">${p.type}</span>
           <div class="pnote">${p.note}</div>
@@ -162,29 +251,45 @@
       });
     }
 
-    // ---- MODE TOGGLE ------------------------------------------------------
+    // ---- SKIN + MODE ------------------------------------------------------
+    function applySkin(name) {
+      const s = SKINS[name]; currentSkin = name;
+      Object.entries(s.vars).forEach(([k, v]) => document.documentElement.style.setProperty(k, v));
+      ROAD = s.road; ROAD_GLOW = s.roadGlow; PIN = s.pin;
+      if (tileLayer) map.removeLayer(tileLayer);
+      tileLayer = L.tileLayer(s.tiles, { attribution: "&copy; OpenStreetMap, &copy; CARTO", maxZoom: 20 }).addTo(map);
+      renderPins(); renderPredicted(); renderReal();
+      document.querySelectorAll(".swatch").forEach(el => el.classList.toggle("active", el.dataset.skin === name));
+    }
+
     const BANNERS = {
       places:    "📍 Places only — every spot you've been. Tap a pin for details.",
-      predicted: "🛣️ Predicted — most-probable roads between places (dashed = estimate, not confirmed).",
-      real:      "✅ Real — actual Life360-logged trips. Solid = walked · dashed = taxi.",
+      predicted: "🛣️ Predicted — straight connectors between places (estimate, not your real path).",
+      real:      "✅ Real — actual Life360 trips, snapped to streets. Solid = walked · dashed = taxi.",
     };
     function setMode(mode) {
+      currentMode = mode;
       map.removeLayer(predictedLayer); map.removeLayer(realLayer);
       if (mode === "predicted") map.addLayer(predictedLayer);
       if (mode === "real") map.addLayer(realLayer);
       document.getElementById("banner").textContent = BANNERS[mode];
-      document.querySelectorAll(".modes button").forEach(b => b.classList.toggle("active", b.dataset.mode === mode));
+      document.querySelectorAll("#modes button").forEach(b => b.classList.toggle("active", b.dataset.mode === mode));
     }
-    document.querySelectorAll(".modes button").forEach(btn =>
-      btn.addEventListener("click", () => setMode(btn.dataset.mode)));
 
-    // ---- GO ---------------------------------------------------------------
-    document.getElementById("status").textContent = "tracing roads…";
-    drawPins();
-    Promise.all([buildPredicted(), buildReal()]).then(() => {
-      document.getElementById("status").textContent = "";
+    // ---- WIRE UP ----------------------------------------------------------
+    const skinsEl = document.getElementById("skins");
+    Object.entries(SKINS).forEach(([key, s]) => {
+      const sw = document.createElement("div");
+      sw.className = "swatch"; sw.dataset.skin = key; sw.title = s.label;
+      sw.style.background = s.swatch;
+      sw.addEventListener("click", () => applySkin(key));
+      skinsEl.appendChild(sw);
     });
+    document.querySelectorAll("#modes button").forEach(btn => btn.addEventListener("click", () => setMode(btn.dataset.mode)));
+
+    applySkin("amber");
     setMode("real");
+    buildRealCache();
   </script>
 </body>
 </html>
