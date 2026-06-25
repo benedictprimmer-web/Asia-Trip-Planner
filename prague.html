@@ -13,12 +13,19 @@
 
     .bar {
       position: absolute; top: 0; left: 0; right: 0; z-index: 1000;
-      display: flex; align-items: center; gap: 8px;
+      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
       padding: 10px 12px; backdrop-filter: blur(8px);
       background: rgba(255,250,240,.82); color: #5b4a2e;
     }
-    .bar h1 { font-size: 15px; margin: 0; flex: 1; font-weight: 600; }
-    .bar .status { font-size: 11px; opacity: .7; }
+    .bar h1 { font-size: 15px; margin: 0; flex: 1 1 100%; font-weight: 600; }
+    .modes { display: flex; gap: 6px; }
+    .modes button {
+      border: 0; border-radius: 20px; padding: 7px 13px; font-size: 13px;
+      font-weight: 600; cursor: pointer; background: #f1e3cc; color: #5b4a2e;
+      opacity: .6; transition: opacity .15s;
+    }
+    .modes button.active { opacity: 1; box-shadow: inset 0 0 0 2px #e58e26; }
+    .bar .status { font-size: 11px; opacity: .7; margin-left: auto; }
 
     .banner {
       position: absolute; bottom: 14px; left: 12px; right: 12px; z-index: 1000;
@@ -41,44 +48,60 @@
 
   <div class="bar">
     <h1>🗺️ Prague — places I've been</h1>
-    <span class="status" id="status">tracing roads…</span>
+    <div class="modes">
+      <button data-mode="places">Places</button>
+      <button data-mode="predicted" class="active">Predicted</button>
+      <button data-mode="real">Real</button>
+    </div>
+    <span class="status" id="status"></span>
   </div>
 
-  <div class="banner" id="banner">
-    📍 Pins are <b>approximate</b> placeholders and the route order is a guess — your Life360 screenshots will fix both. Roads highlighted in amber follow the real streets from the hostel outward.
-  </div>
+  <div class="banner" id="banner"></div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>
     // ---- DATA -------------------------------------------------------------
-    // people = who was there (just you for MVP; James etc. later).
-    // approx = true means the coordinate is a guess, to be corrected from Life360.
+    // named=true  -> location is authoritative (you told me the place by name).
+    // approx=true -> best-estimate location, to be refined from Life360.
     const PLACES = {
-      hostel:  { name: "Clown and Bard Hostel", type: "hostel",   people: ["Me"], note: "Home base in Žižkov. The route starts here.", lat: 50.0814, lng: 14.4500, approx: true },
-      square:  { name: "The square (name?)",    type: "landmark", people: ["Me"], note: "I'm here now — need the name.",            lat: 50.0822, lng: 14.4488, approx: true },
+      hostel:  { name: "Clown and Bard Hostel", type: "hostel",   people: ["Me"], note: "Home base in Žižkov. The route starts here.", lat: 50.0814, lng: 14.4500, named: true },
+      square:  { name: "The square (name?)",    type: "landmark", people: ["Me"], note: "Need the name.",                              lat: 50.0822, lng: 14.4488, approx: true },
       olivers: { name: "Oliver's Café",         type: "café",     people: ["Me"], note: "Coffee stop.",                              lat: 50.0800, lng: 14.4452, approx: true },
-      dog:     { name: "Dog Bar",               type: "bar",      people: ["Me"], note: "Was here yesterday.",                        lat: 50.0876, lng: 14.4515, approx: true },
+      dog:     { name: "Dog Bar",               type: "bar",      people: ["Me"], note: "Was here.",                                  lat: 50.0876, lng: 14.4515, named: true },
     };
 
-    // The walked path: an ordered sequence of nodes starting at the hostel.
-    // Edit this order (and add more) once Life360 shows the real route.
+    // PREDICTED: ordered places -> most-probable roads (OSRM). Edit freely.
     const ROUTE = ["hostel", "square", "olivers", "dog"];
 
-    // ---- THEME (amber, locked) -------------------------------------------
+    // REAL: actual walked trails traced from Life360. Each = { path:[[lat,lng]...], mode }.
+    // mode 'walk' = roads you were on; 'taxi' = a hop (drawn dashed, not a walked road).
+    // Empty until Life360 screenshots arrive.
+    const REAL_TRAILS = [];
+
+    // ---- THEME (amber) ----------------------------------------------------
     const TILES = "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png";
-    const ROAD_GLOW = "#fcd9a0";   // soft wide underlay
-    const ROAD_CORE = "#e58e26";   // saturated amber road
-    const PIN_FILL  = "#d97706";
+    const ROAD_GLOW = "#fcd9a0", ROAD_CORE = "#e58e26", PIN_FILL = "#d97706";
 
     // ---- MAP --------------------------------------------------------------
     const map = L.map("map", { zoomControl: false }).setView([PLACES.hostel.lat, PLACES.hostel.lng], 15);
     L.control.zoom({ position: "bottomright" }).addTo(map);
     L.tileLayer(TILES, { attribution: "&copy; OpenStreetMap, &copy; CARTO", maxZoom: 20 }).addTo(map);
 
-    const roadLayer = L.layerGroup().addTo(map);
-    const pinLayer  = L.layerGroup().addTo(map);
+    const predictedLayer = L.layerGroup();
+    const realLayer      = L.layerGroup();
+    const pinLayer       = L.layerGroup().addTo(map);
 
-    // ---- ROADS: snap each segment to real streets via OSRM ---------------
+    // ---- shared road drawing ---------------------------------------------
+    function drawRoad(layer, geometry, { dashed = false } = {}) {
+      L.geoJSON(geometry, { style: { color: ROAD_GLOW, weight: 11, opacity: .9, lineCap: "round", lineJoin: "round" } }).addTo(layer);
+      L.geoJSON(geometry, { style: { color: ROAD_CORE, weight: 5, opacity: 1, lineCap: "round", lineJoin: "round", dashArray: dashed ? "1 10" : null } }).addTo(layer);
+    }
+    function drawPathLine(layer, latlngs, { dashed = false } = {}) {
+      L.polyline(latlngs, { color: ROAD_GLOW, weight: 11, opacity: .9, lineCap: "round", lineJoin: "round" }).addTo(layer);
+      L.polyline(latlngs, { color: ROAD_CORE, weight: 5, opacity: 1, lineCap: "round", lineJoin: "round", dashArray: dashed ? "1 10" : null }).addTo(layer);
+    }
+
+    // ---- PREDICTED: snap each segment to real streets via OSRM ------------
     async function fetchRoute(a, b) {
       for (const profile of ["foot", "driving"]) {
         try {
@@ -87,39 +110,31 @@
           const res = await fetch(url);
           if (!res.ok) continue;
           const j = await res.json();
-          if (j.routes && j.routes[0]) return j.routes[0].geometry; // GeoJSON LineString
-        } catch (e) { /* try next profile */ }
+          if (j.routes && j.routes[0]) return j.routes[0].geometry;
+        } catch (e) {}
       }
-      return null; // fall back to a straight hint line
+      return null;
     }
-
-    function drawSegment(geometry, straightEnds) {
-      if (geometry) {
-        // wide soft underlay
-        L.geoJSON(geometry, { style: { color: ROAD_GLOW, weight: 11, opacity: .9, lineCap: "round", lineJoin: "round" } }).addTo(roadLayer);
-        // saturated core
-        L.geoJSON(geometry, { style: { color: ROAD_CORE, weight: 5,  opacity: 1,  lineCap: "round", lineJoin: "round" } }).addTo(roadLayer);
-      } else {
-        // routing unavailable — faint dashed straight line so the link still reads
-        L.polyline(straightEnds, { color: ROAD_CORE, weight: 3, opacity: .5, dashArray: "4 8" }).addTo(roadLayer);
-      }
-    }
-
-    async function buildRoads() {
+    async function buildPredicted() {
+      document.getElementById("status").textContent = "tracing roads…";
       for (let i = 0; i < ROUTE.length - 1; i++) {
         const a = PLACES[ROUTE[i]], b = PLACES[ROUTE[i + 1]];
         const geom = await fetchRoute(a, b);
-        drawSegment(geom, [[a.lat, a.lng], [b.lat, b.lng]]);
+        if (geom) drawRoad(predictedLayer, geom, { dashed: true });
+        else drawPathLine(predictedLayer, [[a.lat, a.lng], [b.lat, b.lng]], { dashed: true });
       }
       document.getElementById("status").textContent = "";
+    }
+
+    // ---- REAL: draw traced Life360 trails --------------------------------
+    function buildReal() {
+      REAL_TRAILS.forEach(t => drawPathLine(realLayer, t.path, { dashed: t.mode === "taxi" }));
     }
 
     // ---- NODES ------------------------------------------------------------
     function drawPins() {
       Object.values(PLACES).forEach(p => {
-        const dot = L.circleMarker([p.lat, p.lng], {
-          radius: 6, color: "#fff", weight: 2, fillColor: PIN_FILL, fillOpacity: 1,
-        }).addTo(pinLayer);
+        const dot = L.circleMarker([p.lat, p.lng], { radius: 6, color: "#fff", weight: 2, fillColor: PIN_FILL, fillOpacity: 1 }).addTo(pinLayer);
         dot.bindPopup(`
           <div class="pname">${p.name}</div>
           <span class="ptype">${p.type}</span>
@@ -130,8 +145,27 @@
       });
     }
 
+    // ---- MODE TOGGLE ------------------------------------------------------
+    const BANNERS = {
+      places:    "📍 Places only — the nodes you've been to. Switch to Predicted or Real to see the roads.",
+      predicted: "🛣️ Predicted — the most-probable roads between places (dashed = an estimate, not confirmed).",
+      real:      "✅ Real — the actual roads you were on, traced from Life360. (Empty until screenshots arrive.)",
+    };
+    function setMode(mode) {
+      map.removeLayer(predictedLayer); map.removeLayer(realLayer);
+      if (mode === "predicted") map.addLayer(predictedLayer);
+      if (mode === "real") map.addLayer(realLayer);
+      document.getElementById("banner").textContent = BANNERS[mode];
+      document.querySelectorAll(".modes button").forEach(b => b.classList.toggle("active", b.dataset.mode === mode));
+    }
+    document.querySelectorAll(".modes button").forEach(btn =>
+      btn.addEventListener("click", () => setMode(btn.dataset.mode)));
+
+    // ---- GO ---------------------------------------------------------------
     drawPins();
-    buildRoads();
+    buildPredicted();
+    buildReal();
+    setMode("predicted");
   </script>
 </body>
 </html>
