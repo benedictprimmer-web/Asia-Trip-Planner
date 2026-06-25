@@ -39,6 +39,7 @@
       letter-spacing: .5px; padding: 2px 8px; border-radius: 12px; margin: 6px 0;
       background: #f1e3cc; color: #5b4a2e; }
     .pnote { font-size: 13px; color: #444; margin-top: 4px; }
+    .ptime { font-size: 12px; color: #777; margin-top: 4px; }
     .ppeople { font-size: 12px; color: #666; margin-top: 6px; }
     .pflag { font-size: 11px; color: #b45309; margin-top: 6px; font-weight: 600; }
   </style>
@@ -50,8 +51,8 @@
     <h1>🗺️ Prague — places I've been</h1>
     <div class="modes">
       <button data-mode="places">Places</button>
-      <button data-mode="predicted" class="active">Predicted</button>
-      <button data-mode="real">Real</button>
+      <button data-mode="predicted">Predicted</button>
+      <button data-mode="real" class="active">Real</button>
     </div>
     <span class="status" id="status"></span>
   </div>
@@ -61,29 +62,40 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>
     // ---- DATA -------------------------------------------------------------
-    // named=true  -> location is authoritative (you told me the place by name).
-    // approx=true -> best-estimate location, to be refined from Life360.
+    // src: 'named'  -> you told me the place by name (authoritative).
+    //      'life360'-> real address from a Life360 screenshot (geocoded, good).
+    //      'guess'  -> best estimate, still to be confirmed.
     const PLACES = {
-      hostel:  { name: "Clown and Bard Hostel", type: "hostel",   people: ["Me"], note: "Home base in Žižkov. The route starts here.", lat: 50.0814, lng: 14.4500, named: true },
-      square:  { name: "The square (name?)",    type: "landmark", people: ["Me"], note: "Need the name.",                              lat: 50.0822, lng: 14.4488, approx: true },
-      olivers: { name: "Oliver's Café",         type: "café",     people: ["Me"], note: "Coffee stop.",                              lat: 50.0800, lng: 14.4452, approx: true },
-      dog:     { name: "Dog Bar",               type: "bar",      people: ["Me"], note: "Was here.",                                  lat: 50.0876, lng: 14.4515, named: true },
+      hostel:    { name: "Clown and Bard Hostel", type: "hostel",   note: "Home base — Bořivojova 758/102, Žižkov.",  time: "your stay", lat: 50.08165, lng: 14.45000, people: ["Me"], src: "named" },
+      stepanska: { name: "Štěpánská 611/14",       type: "night out",note: "Long night here, ~5 hrs. Name it?",        time: "Tue 20:42 – 01:35", lat: 50.07990, lng: 14.42600, people: ["Me"], src: "life360" },
+      newhall:   { name: "New Town Hall area",     type: "landmark", note: "Taxi home left from here at 2am.",          time: "Tue ~02:04", lat: 50.07840, lng: 14.42060, people: ["Me"], src: "life360" },
+      seifert:   { name: "Seifertova 49",          type: "stop",     note: "Taxi to Štěpánská set off here.",          time: "Tue 20:36", lat: 50.08680, lng: 14.44900, people: ["Me"], src: "life360" },
+      kubelik:   { name: "Kubelíkova 1780/21",     type: "stop",     note: "~1h20 here. Name it?",                     time: "Wed 13:14 – 14:34", lat: 50.08350, lng: 14.45150, people: ["Me"], src: "life360" },
+      stitneho:  { name: "Štítného 139/8",         type: "stop",     note: "Quick 30 min. Name it?",                   time: "Thu 12:46 – 13:16", lat: 50.08760, lng: 14.45350, people: ["Me"], src: "life360" },
+      krasova:   { name: "Krásova 1011/20",        type: "stop",     note: "Start of the Thu walk.",                   time: "Thu ~11:59", lat: 50.08520, lng: 14.44950, people: ["Me"], src: "life360" },
+      pavlac:    { name: "Café Pavlač",            type: "café",     note: "On the Krásova walk.",                     time: "Thu midday", lat: 50.08550, lng: 14.44800, people: ["Me"], src: "life360" },
+      sladkov:   { name: "Sladkovského náměstí",   type: "landmark", note: "The square you were in? (confirm)",         time: "Thu ~12:16", lat: 50.08650, lng: 14.44480, people: ["Me"], src: "life360" },
+      dog:       { name: "Dog Bar",                type: "bar",      note: "You named this one.",                      time: "", lat: 50.08800, lng: 14.45000, people: ["Me"], src: "named", approx: true },
+      olivers:   { name: "Oliver's Café",          type: "café",     note: "You named this one.",                      time: "", lat: 50.08050, lng: 14.44520, people: ["Me"], src: "named", approx: true },
     };
 
-    // PREDICTED: ordered places -> most-probable roads (OSRM). Edit freely.
-    const ROUTE = ["hostel", "square", "olivers", "dog"];
+    // PREDICTED: estimated most-probable roads between places, hostel outward.
+    const ROUTE = ["hostel", "kubelik", "stitneho", "krasova", "pavlac", "sladkov", "seifert", "stepanska", "newhall"];
 
-    // REAL: actual walked trails traced from Life360. Each = { path:[[lat,lng]...], mode }.
-    // mode 'walk' = roads you were on; 'taxi' = a hop (drawn dashed, not a walked road).
-    // Empty until Life360 screenshots arrive.
-    const REAL_TRAILS = [];
+    // REAL: actual Life360-logged trips. mode 'walk' = roads you were on,
+    // 'taxi' = a vehicle hop (drawn dashed — roads travelled, not walked).
+    const REAL_TRIPS = [
+      { from: "krasova", to: "sladkov", mode: "walk", label: "Thu walk past Café Pavlač" },
+      { from: "seifert", to: "stepanska", mode: "taxi", label: "Tue 20:36 taxi" },
+      { from: "newhall", to: "hostel", mode: "taxi", label: "Tue 02:04 taxi home" },
+    ];
 
     // ---- THEME (amber) ----------------------------------------------------
     const TILES = "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png";
     const ROAD_GLOW = "#fcd9a0", ROAD_CORE = "#e58e26", PIN_FILL = "#d97706";
 
     // ---- MAP --------------------------------------------------------------
-    const map = L.map("map", { zoomControl: false }).setView([PLACES.hostel.lat, PLACES.hostel.lng], 15);
+    const map = L.map("map", { zoomControl: false }).setView([50.0825, 14.4470], 14);
     L.control.zoom({ position: "bottomright" }).addTo(map);
     L.tileLayer(TILES, { attribution: "&copy; OpenStreetMap, &copy; CARTO", maxZoom: 20 }).addTo(map);
 
@@ -91,19 +103,18 @@
     const realLayer      = L.layerGroup();
     const pinLayer       = L.layerGroup().addTo(map);
 
-    // ---- shared road drawing ---------------------------------------------
     function drawRoad(layer, geometry, { dashed = false } = {}) {
       L.geoJSON(geometry, { style: { color: ROAD_GLOW, weight: 11, opacity: .9, lineCap: "round", lineJoin: "round" } }).addTo(layer);
       L.geoJSON(geometry, { style: { color: ROAD_CORE, weight: 5, opacity: 1, lineCap: "round", lineJoin: "round", dashArray: dashed ? "1 10" : null } }).addTo(layer);
     }
-    function drawPathLine(layer, latlngs, { dashed = false } = {}) {
-      L.polyline(latlngs, { color: ROAD_GLOW, weight: 11, opacity: .9, lineCap: "round", lineJoin: "round" }).addTo(layer);
-      L.polyline(latlngs, { color: ROAD_CORE, weight: 5, opacity: 1, lineCap: "round", lineJoin: "round", dashArray: dashed ? "1 10" : null }).addTo(layer);
+    function drawStraight(layer, latlngs, { dashed = false } = {}) {
+      L.polyline(latlngs, { color: ROAD_CORE, weight: 3, opacity: .5, dashArray: dashed ? "4 8" : null }).addTo(layer);
     }
 
-    // ---- PREDICTED: snap each segment to real streets via OSRM ------------
-    async function fetchRoute(a, b) {
-      for (const profile of ["foot", "driving"]) {
+    // ---- OSRM road snapping ----------------------------------------------
+    async function fetchRoute(a, b, preferred) {
+      const profiles = preferred === "taxi" ? ["driving", "foot"] : ["foot", "driving"];
+      for (const profile of profiles) {
         try {
           const url = `https://router.project-osrm.org/route/v1/${profile}/` +
             `${a.lng},${a.lat};${b.lng},${b.lat}?overview=full&geometries=geojson`;
@@ -115,20 +126,22 @@
       }
       return null;
     }
+
     async function buildPredicted() {
-      document.getElementById("status").textContent = "tracing roads…";
       for (let i = 0; i < ROUTE.length - 1; i++) {
         const a = PLACES[ROUTE[i]], b = PLACES[ROUTE[i + 1]];
         const geom = await fetchRoute(a, b);
         if (geom) drawRoad(predictedLayer, geom, { dashed: true });
-        else drawPathLine(predictedLayer, [[a.lat, a.lng], [b.lat, b.lng]], { dashed: true });
+        else drawStraight(predictedLayer, [[a.lat, a.lng], [b.lat, b.lng]], { dashed: true });
       }
-      document.getElementById("status").textContent = "";
     }
-
-    // ---- REAL: draw traced Life360 trails --------------------------------
-    function buildReal() {
-      REAL_TRAILS.forEach(t => drawPathLine(realLayer, t.path, { dashed: t.mode === "taxi" }));
+    async function buildReal() {
+      for (const trip of REAL_TRIPS) {
+        const a = PLACES[trip.from], b = PLACES[trip.to];
+        const geom = await fetchRoute(a, b, trip.mode);
+        if (geom) drawRoad(realLayer, geom, { dashed: trip.mode === "taxi" });
+        else drawStraight(realLayer, [[a.lat, a.lng], [b.lat, b.lng]], { dashed: trip.mode === "taxi" });
+      }
     }
 
     // ---- NODES ------------------------------------------------------------
@@ -139,17 +152,18 @@
           <div class="pname">${p.name}</div>
           <span class="ptype">${p.type}</span>
           <div class="pnote">${p.note}</div>
+          ${p.time ? `<div class="ptime">🕘 ${p.time}</div>` : ""}
           <div class="ppeople">👥 ${p.people.join(", ")}</div>
-          ${p.approx ? '<div class="pflag">⚠︎ approx location — fix from Life360</div>' : ""}
+          ${p.approx ? '<div class="pflag">⚠︎ approx — confirm location</div>' : ""}
         `);
       });
     }
 
     // ---- MODE TOGGLE ------------------------------------------------------
     const BANNERS = {
-      places:    "📍 Places only — the nodes you've been to. Switch to Predicted or Real to see the roads.",
-      predicted: "🛣️ Predicted — the most-probable roads between places (dashed = an estimate, not confirmed).",
-      real:      "✅ Real — the actual roads you were on, traced from Life360. (Empty until screenshots arrive.)",
+      places:    "📍 Places only — every spot you've been. Tap a pin for details.",
+      predicted: "🛣️ Predicted — most-probable roads between places (dashed = estimate, not confirmed).",
+      real:      "✅ Real — actual Life360-logged trips. Solid = walked · dashed = taxi.",
     };
     function setMode(mode) {
       map.removeLayer(predictedLayer); map.removeLayer(realLayer);
@@ -162,10 +176,12 @@
       btn.addEventListener("click", () => setMode(btn.dataset.mode)));
 
     // ---- GO ---------------------------------------------------------------
+    document.getElementById("status").textContent = "tracing roads…";
     drawPins();
-    buildPredicted();
-    buildReal();
-    setMode("predicted");
+    Promise.all([buildPredicted(), buildReal()]).then(() => {
+      document.getElementById("status").textContent = "";
+    });
+    setMode("real");
   </script>
 </body>
 </html>
