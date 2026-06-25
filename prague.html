@@ -73,6 +73,8 @@
       kubelik:   { name: "Kubelíkova 1780/21",     type: "stop",     note: "~1h20 here. Name it?",                     time: "Wed 13:14 – 14:34", lat: 50.08350, lng: 14.45150, people: ["Me"], src: "life360" },
       stitneho:  { name: "Štítného 139/8",         type: "stop",     note: "Quick 30 min. Name it?",                   time: "Thu 12:46 – 13:16", lat: 50.08760, lng: 14.45350, people: ["Me"], src: "life360" },
       krasova:   { name: "Krásova 1011/20",        type: "stop",     note: "Start of the Thu walk.",                   time: "Thu ~11:59", lat: 50.08520, lng: 14.44950, people: ["Me"], src: "life360" },
+      rajske:    { name: "U Rajské zahrady 4",     type: "stop",     note: "~1.5 hrs near Riegrovy sady. Name it?",     time: "Tue 12:55 – 14:26", lat: 50.07860, lng: 14.44580, people: ["Me"], src: "life360" },
+      twist:     { name: "Twist",                  type: "bar",      note: "On the map by Sladkovského nám. — bar? (confirm)", time: "", lat: 50.08600, lng: 14.44720, people: ["Me"], src: "life360", approx: true },
       pavlac:    { name: "Café Pavlač",            type: "café",     note: "On the Krásova walk.",                     time: "Thu midday", lat: 50.08550, lng: 14.44800, people: ["Me"], src: "life360" },
       sladkov:   { name: "Sladkovského náměstí",   type: "landmark", note: "The square you were in? (confirm)",         time: "Thu ~12:16", lat: 50.08650, lng: 14.44480, people: ["Me"], src: "life360" },
       dog:       { name: "Dog Bar",                type: "bar",      note: "You named this one.",                      time: "", lat: 50.08800, lng: 14.45000, people: ["Me"], src: "named", approx: true },
@@ -80,12 +82,13 @@
     };
 
     // PREDICTED: estimated most-probable roads between places, hostel outward.
-    const ROUTE = ["hostel", "kubelik", "stitneho", "krasova", "pavlac", "sladkov", "seifert", "stepanska", "newhall"];
+    const ROUTE = ["hostel", "rajske", "kubelik", "stitneho", "krasova", "pavlac", "twist", "sladkov", "seifert", "stepanska", "newhall"];
 
     // REAL: actual Life360-logged trips. mode 'walk' = roads you were on,
     // 'taxi' = a vehicle hop (drawn dashed — roads travelled, not walked).
     const REAL_TRIPS = [
       { from: "krasova", to: "sladkov", mode: "walk", label: "Thu walk past Café Pavlač" },
+      { from: "hostel", to: "rajske", mode: "walk", label: "Tue ~12:41 walk to U Rajské zahrady" },
       { from: "seifert", to: "stepanska", mode: "taxi", label: "Tue 20:36 taxi" },
       { from: "newhall", to: "hostel", mode: "taxi", label: "Tue 02:04 taxi home" },
     ];
