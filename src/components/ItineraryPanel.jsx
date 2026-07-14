@@ -15,7 +15,7 @@ import {
 import StopCard from './StopCard';
 import TripStats from './TripStats';
 
-export default function ItineraryPanel({ stops, climateDb, onReorder, onDelete, onEdit, onAddStop }) {
+export default function ItineraryPanel({ stops, climateDb, onReorder, onDelete, onEdit, onAddStop, fullWidth = false }) {
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 5 } }),
     useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates })
@@ -34,13 +34,13 @@ export default function ItineraryPanel({ stops, climateDb, onReorder, onDelete, 
   return (
     <div
       style={{
-        width: 320,
-        minWidth: 280,
-        maxWidth: 360,
+        width: fullWidth ? '100%' : 320,
+        minWidth: fullWidth ? 0 : 280,
+        maxWidth: fullWidth ? 'none' : 360,
         height: '100%',
         display: 'flex',
         flexDirection: 'column',
-        borderLeft: '1px solid #e5e7eb',
+        borderLeft: fullWidth ? 'none' : '1px solid #e5e7eb',
         background: '#f9fafb',
       }}
     >
